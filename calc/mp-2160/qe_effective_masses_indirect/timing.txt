@@ -1,0 +1,1 @@
+qe_effective_mass_indirect.py  15271.01 s  8 cores

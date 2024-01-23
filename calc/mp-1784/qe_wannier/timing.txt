@@ -1,0 +1,2 @@
+qe_wannier.py               206.86 s  8 cores
+qe_wannier.py               214.78 s  8 cores

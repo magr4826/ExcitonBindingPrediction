@@ -1,0 +1,235 @@
+ 
+             +---------------------------------------------------+
+             |                                                   |
+             |                   WANNIER90                       |
+             |                                                   |
+             +---------------------------------------------------+
+             |                                                   |
+             |        Welcome to the Maximally-Localized         |
+             |        Generalized Wannier Functions code         |
+             |            http://www.wannier.org                 |
+             |                                                   |
+             |                                                   |
+             |  Wannier90 Developer Group:                       |
+             |    Giovanni Pizzi    (EPFL)                       |
+             |    Valerio Vitale    (Cambridge)                  |
+             |    David Vanderbilt  (Rutgers University)         |
+             |    Nicola Marzari    (EPFL)                       |
+             |    Ivo Souza         (Universidad del Pais Vasco) |
+             |    Arash A. Mostofi  (Imperial College London)    |
+             |    Jonathan R. Yates (University of Oxford)       |
+             |                                                   |
+             |  For the full list of Wannier90 3.x authors,      |
+             |  please check the code documentation and the      |
+             |  README on the GitHub page of the code            |
+             |                                                   |
+             |                                                   |
+             |  Please cite                                      |
+             |                                                   |
+             |  [ref] "Wannier90 as a community code:            |
+             |        new features and applications",            |
+             |        G. Pizzi et al., J. Phys. Cond. Matt. 32,  |
+             |        165902 (2020).                             |
+             |        http://doi.org/10.1088/1361-648X/ab51ff    |
+             |                                                   |
+             |  in any publications arising from the use of      |
+             |  this code. For the method please cite            |
+             |                                                   |
+             |  [ref] "Maximally Localized Generalised Wannier   |
+             |         Functions for Composite Energy Bands"     |
+             |         N. Marzari and D. Vanderbilt              |
+             |         Phys. Rev. B 56 12847 (1997)              |
+             |                                                   |
+             |  [ref] "Maximally Localized Wannier Functions     |
+             |         for Entangled Energy Bands"               |
+             |         I. Souza, N. Marzari and D. Vanderbilt    |
+             |         Phys. Rev. B 65 035109 (2001)             |
+             |                                                   |
+             |                                                   |
+             | Copyright (c) 1996-2020                           |
+             |        The Wannier90 Developer Group and          |
+             |        individual contributors                    |
+             |                                                   |
+             |      Release: 3.1.0        5th March    2020      |
+             |                                                   |
+             | This program is free software; you can            |
+             | redistribute it and/or modify it under the terms  |
+             | of the GNU General Public License as published by |
+             | the Free Software Foundation; either version 2 of |
+             | the License, or (at your option) any later version|
+             |                                                   |
+             | This program is distributed in the hope that it   |
+             | will be useful, but WITHOUT ANY WARRANTY; without |
+             | even the implied warranty of MERCHANTABILITY or   |
+             | FITNESS FOR A PARTICULAR PURPOSE. See the GNU     |
+             | General Public License for more details.          |
+             |                                                   |
+             | You should have received a copy of the GNU General|
+             | Public License along with this program; if not,   |
+             | write to the Free Software Foundation, Inc.,      |
+             | 675 Mass Ave, Cambridge, MA 02139, USA.           |
+             |                                                   |
+             +---------------------------------------------------+
+             |    Execution started on  3Jan2024 at 14:28:46     |
+             +---------------------------------------------------+
+ 
+ ******************************************************************************
+ * -> Using CODATA 2006 constant values                                       *
+ *    (http://physics.nist.gov/cuu/Constants/index.html)                      *
+ * -> Using Bohr value from CODATA                                            *
+ ******************************************************************************
+ 
+
+ Running in serial (with parallel executable)
+ 
+                                    ------
+                                    SYSTEM
+                                    ------
+ 
+                              Lattice Vectors (Ang)
+                    a_1    -2.654413   0.000000   2.654413
+                    a_2     0.000000   2.654413   2.654413
+                    a_3    -2.654413   2.654413   0.000000
+ 
+                   Unit Cell Volume:      37.40550  (Ang^3)
+ 
+                        Reciprocal-Space Vectors (Ang^-1)
+                    b_1    -1.183536  -1.183536   1.183536
+                    b_2     1.183536   1.183536   1.183536
+                    b_3    -1.183536   1.183536  -1.183536
+  
+ *----------------------------------------------------------------------------*
+ |   Site       Fractional Coordinate          Cartesian Coordinate (Ang)     |
+ +----------------------------------------------------------------------------+
+ | K    1   0.00000   0.00000   0.00000   |    0.00000   0.00000   0.00000    |
+ | F    1   0.50000   0.50000   0.50000   |   -2.65441   2.65441   2.65441    |
+ *----------------------------------------------------------------------------*
+  
+  
+ *-------------------------------- POSTW90 -----------------------------------*
+ |  Number of Wannier Functions               :                 3             |
+ |  Number of electrons per state             :                 2             |
+ |  Scissor shift applied to conduction bands :             0.000             |
+ |  Number of valence bands                   :       not defined             |
+ |  Fermi energy (eV)                         :             0.000             |
+ |  Output verbosity (1=low, 5=high)          :                 1             |
+ |  Timing Level (1=low, 5=high)              :                 1             |
+ |  Optimisation (0=memory, 3=speed)          :                 3             |
+ |  Length Unit                               :               Ang             |
+ *----------------------------------------------------------------------------*
+ *------------------------ Global Smearing Parameters ------------------------*
+ |  Adaptive width smearing                   :                 T             |
+ |  Adaptive smearing factor                  :             1.414             |
+ |  Maximum allowed smearing width (eV)       :             1.000             |
+ |  Smearing Function                                             Gaussian    |
+ |  Global interpolation k-points defined     :                 F             |
+ *----------------------------------------------------------------------------*
+ *----------------------------------------------------------------------------*
+ *------------------------Generic Band Interpolation--------------------------*
+ |  Compute Properties at given k-points      :                 T             |
+ |  Calculate band gradients                  :                 T             |
+ |  Write data into a single file             :                 T             |
+ *----------------------------------------------------------------------------*
+ Time to read parameters        0.106 (sec)
+
+ *---------------------------------- K-MESH ----------------------------------*
+ +----------------------------------------------------------------------------+
+ |                    Distance to Nearest-Neighbour Shells                    |
+ |                    ------------------------------------                    |
+ |          Shell             Distance (Ang^-1)          Multiplicity         |
+ |          -----             -----------------          ------------         |
+ |             1                   0.170829                      8            |
+ |             2                   0.197256                      6            |
+ |             3                   0.278962                     12            |
+ |             4                   0.327112                     24            |
+ |             5                   0.341657                      8            |
+ |             6                   0.394512                      6            |
+ |             7                   0.429909                     24            |
+ |             8                   0.441078                     24            |
+ |             9                   0.483176                     24            |
+ |            10                   0.512486                     32            |
+ |            11                   0.557924                     12            |
+ |            12                   0.583491                     48            |
+ |            13                   0.591768                     30            |
+ |            14                   0.623778                     24            |
+ |            15                   0.646747                     24            |
+ |            16                   0.654224                     24            |
+ |            17                   0.683315                      8            |
+ |            18                   0.704345                     48            |
+ |            19                   0.711216                     24            |
+ |            20                   0.738064                     48            |
+ |            21                   0.757576                     72            |
+ |            22                   0.789024                      6            |
+ |            23                   0.807305                     24            |
+ |            24                   0.813307                     48            |
+ |            25                   0.836886                     36            |
+ |            26                   0.854143                     56            |
+ |            27                   0.859819                     24            |
+ |            28                   0.882155                     24            |
+ |            29                   0.898544                     72            |
+ |            30                   0.903940                     48            |
+ |            31                   0.925212                     24            |
+ |            32                   0.940851                     48            |
+ |            33                   0.966353                     24            |
+ |            34                   0.981336                     72            |
+ |            35                   0.986280                     30            |
+ |            36                   1.005812                     72            |
+ +----------------------------------------------------------------------------+
+ | The b-vectors are chosen automatically                                     |
+ | The following shells are used:   1                                         |
+ +----------------------------------------------------------------------------+
+ |                        Shell   # Nearest-Neighbours                        |
+ |                        -----   --------------------                        |
+ |                          1               8                                 |
+ +----------------------------------------------------------------------------+
+ | Completeness relation is fully satisfied [Eq. (B1), PRB 56, 12847 (1997)]  |
+ +----------------------------------------------------------------------------+
+ |                  b_k Vectors (Ang^-1) and Weights (Ang^2)                  |
+ |                  ----------------------------------------                  |
+ |            No.         b_k(x)      b_k(y)      b_k(z)        w_b           |
+ |            ---        --------------------------------     --------        |
+ |             1        -0.098628    0.098628   -0.098628    12.850197        |
+ |             2         0.098628    0.098628    0.098628    12.850197        |
+ |             3        -0.098628   -0.098628    0.098628    12.850197        |
+ |             4        -0.098628    0.098628    0.098628    12.850197        |
+ |             5         0.098628   -0.098628    0.098628    12.850197        |
+ |             6        -0.098628   -0.098628   -0.098628    12.850197        |
+ |             7         0.098628    0.098628   -0.098628    12.850197        |
+ |             8         0.098628   -0.098628   -0.098628    12.850197        |
+ +----------------------------------------------------------------------------+
+ |                           b_k Directions (Ang^-1)                          |
+ |                           -----------------------                          |
+ |            No.           x           y           z                         |
+ |            ---        --------------------------------                     |
+ |             1        -0.098628    0.098628   -0.098628                     |
+ |             2         0.098628    0.098628    0.098628                     |
+ |             3        -0.098628   -0.098628    0.098628                     |
+ |             4        -0.098628    0.098628    0.098628                     |
+ +----------------------------------------------------------------------------+
+  
+ Time to get kmesh              1.078 (sec)
+ Reading restart information from file mp-463.chk :
+ written on  3Jan2024 at 14:28:46 ... done
+
+
+ Time to read and process       0.013 (sec)
+ 
+ *---------------------------------------------------------------------------*
+ |                      Generic Band Interpolation routines                  |
+ *---------------------------------------------------------------------------*
+ |                                All done.                                  |
+ *---------------------------------------------------------------------------*
+
+ Total Execution Time           6.527 (sec)
+
+ *===========================================================================*
+ |                             TIMING INFORMATION                            |
+ *===========================================================================*
+ |    Tag                                                Ncalls      Time (s)|
+ |---------------------------------------------------------------------------|
+ |kmesh: get                                        :         1         1.078|
+ |geninterp_main                                    :         1         5.329|
+ *---------------------------------------------------------------------------*
+ 
+
+ All done: postw90 exiting

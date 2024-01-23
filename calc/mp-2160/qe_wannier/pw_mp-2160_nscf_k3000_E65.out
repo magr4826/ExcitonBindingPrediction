@@ -1,0 +1,207 @@
+
+     Program PWSCF v.7.1 starts on  3Jan2024 at 15:59: 4 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     121996 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from pw_mp-2160_nscf_k3000_E65.in
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     out/mp-2160.save/
+     Atomic positions from file used, from input discarded
+ 
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         433     433    131                34604    34604    5778
+     Max         434     434    132                34606    34606    5779
+     Sum        3471    3471   1051               276845   276845   46229
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            8
+     lattice parameter (alat)  =       7.5618  a.u.
+     unit-cell volume          =    3910.2840 (a.u.)^3
+     number of atoms/cell      =           20
+     number of atomic types    =            2
+     number of electrons       =       192.00
+     number of Kohn-Sham states=          192
+     kinetic-energy cutoff     =      65.0000  Ry
+     charge density cutoff     =     260.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   7.561846  celldm(2)=   2.927268  celldm(3)=   3.089316
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   2.927268   0.000000 )  
+               a(3) = (   0.000000   0.000000   3.089316 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.341615  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.323696 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Sb.upf
+     MD5 check sum: 41236ccde766b6cc6001abcc7908fa05
+     Pseudo is Norm-conserving, Zval = 15.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for Se read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Se.upf
+     MD5 check sum: c44afd8c4e480dd2a5f8f6cb06637de2
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Sb            15.00   121.76000     Sb( 1.00)
+        Se             6.00    78.96000     Se( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sb  tau(   1) = (   0.7500001   0.1115131   0.4335002  )
+         2           Sb  tau(   2) = (   0.2500000   2.8157552   2.6558160  )
+         3           Sb  tau(   3) = (   0.2500000   1.5751473   1.1111579  )
+         4           Sb  tau(   4) = (   0.7500001   1.3521211   1.9781582  )
+         5           Sb  tau(   5) = (   0.2500000   0.9648024   0.1044585  )
+         6           Sb  tau(   6) = (   0.7500001   1.9624659   2.9848576  )
+         7           Sb  tau(   7) = (   0.7500001   2.4284365   1.4401995  )
+         8           Sb  tau(   8) = (   0.2500000   0.4988317   1.6491166  )
+         9           Se  tau(   9) = (   0.7500001   0.3733009   2.9297381  )
+        10           Se  tau(  10) = (   0.2500000   2.5539674   0.1595780  )
+        11           Se  tau(  11) = (   0.2500000   1.8369351   1.7042361  )
+        12           Se  tau(  12) = (   0.7500001   1.0903332   1.3850800  )
+        13           Se  tau(  13) = (   0.2500000   0.5623302   0.6343334  )
+        14           Se  tau(  14) = (   0.7500001   2.3649381   2.4549828  )
+        15           Se  tau(  15) = (   0.7500001   2.0259643   0.9103247  )
+        16           Se  tau(  16) = (   0.2500000   0.9013039   2.1789914  )
+        17           Se  tau(  17) = (   0.7500001   0.1583614   1.9380798  )
+        18           Se  tau(  18) = (   0.2500000   2.7689069   1.1512363  )
+        19           Se  tau(  19) = (   0.2500000   1.6219955   2.6958943  )
+        20           Se  tau(  20) = (   0.7500001   1.3052728   0.3934218  )
+
+     number of k points=   192  Gaussian smearing, width (Ry)=  0.0005
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   276845 G-vectors     FFT dimensions: (  40, 120, 120)
+
+     Estimated max dynamical RAM per process >       2.48 GB
+
+     Estimated total dynamical RAM >      19.81 GB
+
+     The potential is recalculated from file :
+     out/mp-2160.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  5.00E-06,  avg # of iterations = 34.0
+
+     total cpu time spent up to now is     2976.5 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     7.9062 ev
+     (compare with:     7.9058 eV, computed in scf)
+
+     Writing all to output data dir out/mp-2160.save/
+ 
+     init_run     :      0.36s CPU      0.40s WALL (       1 calls)
+     electrons    :   2912.69s CPU   2975.59s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.06s CPU      0.07s WALL (       1 calls)
+     hinit0       :      0.15s CPU      0.17s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :   2912.69s CPU   2975.59s WALL (       1 calls)
+     v_of_rho     :      0.05s CPU      0.06s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.37s CPU      1.39s WALL (     192 calls)
+     init_us_2:cp :      1.36s CPU      1.38s WALL (     192 calls)
+     cegterg      :   2774.74s CPU   2833.77s WALL (     401 calls)
+
+     Called by *egterg:
+     cdiaghg      :    328.59s CPU    352.51s WALL (    6723 calls)
+     h_psi        :   1365.20s CPU   1386.52s WALL (    7124 calls)
+     g_psi        :     13.17s CPU     13.23s WALL (    6531 calls)
+
+     Called by h_psi:
+     h_psi:calbec :    240.95s CPU    244.01s WALL (    7124 calls)
+     vloc_psi     :    876.47s CPU    891.54s WALL (    7124 calls)
+     add_vuspsi   :    238.50s CPU    239.21s WALL (    7124 calls)
+
+     General routines
+     calbec       :    240.92s CPU    243.99s WALL (    7124 calls)
+     fft          :      0.02s CPU      0.04s WALL (      10 calls)
+     fftw         :    770.38s CPU    784.04s WALL ( 1190892 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :  48m43.39s CPU  50m 4.42s WALL
+
+ 
+   This run was terminated on:  16:49: 8   3Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

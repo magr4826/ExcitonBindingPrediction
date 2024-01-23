@@ -1,0 +1,2 @@
+qe_effective_mass_indirect.py   128.63 s  8 cores
+qe_effective_mass_indirect.py    45.88 s  8 cores

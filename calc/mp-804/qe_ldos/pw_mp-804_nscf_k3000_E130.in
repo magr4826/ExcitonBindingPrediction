@@ -1,0 +1,42 @@
+&CONTROL
+  calculation = 'nscf',
+  disk_io = 'low',
+  outdir = 'out/',
+  prefix = 'mp-804',
+  pseudo_dir = '/usr/scratch4/magr4985/MG/devEb/pseudo/SG15',
+/
+&SYSTEM
+  celldm(1) = 6.026204659309996,
+  celldm(3) = 1.6282441423810994,
+  degauss = 0.0004593661607577953,
+  ecutwfc = 130,
+  force_symmorphic = .FALSE.,
+  ibrav = 4,
+  nbnd = 36,
+  nosym = .FALSE.,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  nat = 4,
+  ntyp = 2,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diago_full_acc = .TRUE.,
+  diago_thr_init = 5d-06,
+  diagonalization = 'david',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Ga  69.7230 Ga.upf
+  N  14.0067 N.upf
+ATOMIC_POSITIONS crystal
+  Ga 0.33333336 0.66666664 0.49908375
+  Ga 0.66666672 0.33333336 0.99908379
+  N 0.33333336 0.66666664 0.87591636
+  N 0.66666672 0.33333336 0.37591632
+K_POINTS automatic
+  10 10 6 0 0 0
+

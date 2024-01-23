@@ -1,0 +1,240 @@
+
+     Program PWSCF v.7.1 starts on  3Jan2024 at 14:43:57 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     123168 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from pw_mp-22898_emass_k3000_E130.in
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     out/mp-22898.save/
+     Atomic positions from file used, from input discarded
+ 
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         402     402    100                15031    15031    1881
+     Max         403     403    101                15034    15034    1884
+     Sum        3217    3217    805               120261   120261   15065
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            2
+     lattice parameter (alat)  =      13.3885  a.u.
+     unit-cell volume          =     599.9740 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            2
+     number of electrons       =        26.00
+     number of Kohn-Sham states=           26
+     kinetic-energy cutoff     =     130.0000  Ry
+     charge density cutoff     =     520.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  13.388465  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  -0.500000   0.000000   0.500000 )  
+               a(2) = (   0.000000   0.500000   0.500000 )  
+               a(3) = (  -0.500000   0.500000   0.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = ( -1.000000 -1.000000  1.000000 )  
+               b(2) = (  1.000000  1.000000  1.000000 )  
+               b(3) = ( -1.000000  1.000000 -1.000000 )  
+
+
+     PseudoPot. # 1 for I  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/I.upf
+     MD5 check sum: 2bc24df9af9f874725967c58cc477d99
+     Pseudo is Norm-conserving, Zval = 17.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for K  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/K.upf
+     MD5 check sum: 546a68abc2c0296de6abd828b0bae2fd
+     Pseudo is Norm-conserving, Zval =  9.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        I             17.00   126.90450     I ( 1.00)
+        K              9.00    39.09830     K ( 1.00)
+
+     48 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           K   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           I   tau(   2) = (  -0.5000000   0.5000000   0.5000000  )
+
+     number of k points=     7  Gaussian smearing, width (Ry)=  0.0005
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.2857143
+        k(    2) = (   0.0100000   0.0000000   0.0000000), wk =   0.2857143
+        k(    3) = (  -0.0100000   0.0000000   0.0000000), wk =   0.2857143
+        k(    4) = (   0.0000000   0.0100000   0.0000000), wk =   0.2857143
+        k(    5) = (   0.0000000  -0.0100000   0.0000000), wk =   0.2857143
+        k(    6) = (   0.0000000   0.0000000   0.0100000), wk =   0.2857143
+        k(    7) = (   0.0000000   0.0000000  -0.0100000), wk =   0.2857143
+
+     Dense  grid:   120261 G-vectors     FFT dimensions: (  72,  72,  72)
+
+     Estimated max dynamical RAM per process >      17.81 MB
+
+     Estimated total dynamical RAM >     142.48 MB
+
+     The potential is recalculated from file :
+     out/mp-22898.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     ParO style diagonalization
+
+     ethr =  5.00E-06,  avg # of iterations = 20.5
+
+     total cpu time spent up to now is        5.2 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7524   2.7464   2.7464   2.7464   6.6888   9.2536   9.2536
+     9.2536   9.9668   9.9668  12.5641  15.4738  15.4738  15.4738  15.6898
+    15.6898  15.6898
+
+          k = 0.0100 0.0000 0.0000 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+          k =-0.0100 0.0000 0.0000 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+          k = 0.0000 0.0100 0.0000 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+          k = 0.0000-0.0100 0.0000 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+          k = 0.0000 0.0000 0.0100 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+          k = 0.0000 0.0000-0.0100 ( 15065 PWs)   bands (ev):
+
+   -40.0310 -40.0310 -40.0261 -40.0261 -40.0261 -25.7703  -9.2574  -9.2574
+    -9.2574  -7.7523   2.7458   2.7463   2.7463   6.6897   9.2529   9.2542
+     9.2542   9.9670   9.9674  12.5653  15.4651  15.4651  15.4703  15.6900
+    15.6985  15.6985
+
+     the Fermi energy is     5.2883 ev
+     (compare with:     5.2883 eV, computed in scf)
+
+     Writing all to output data dir out/mp-22898.save/
+ 
+     init_run     :      0.29s CPU      0.31s WALL (       1 calls)
+     electrons    :      4.67s CPU      4.75s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.04s CPU      0.05s WALL (       1 calls)
+     hinit0       :      0.01s CPU      0.02s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      4.67s CPU      4.75s WALL (       1 calls)
+     v_of_rho     :      0.04s CPU      0.04s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.01s WALL (       7 calls)
+     init_us_2:cp :      0.00s CPU      0.01s WALL (       7 calls)
+     paro_k       :      4.40s CPU      4.46s WALL (       7 calls)
+
+     Called by paro_*:
+     h_psi        :      3.68s CPU      3.74s WALL (     406 calls)
+     g_psi        :      0.05s CPU      0.06s WALL (    4383 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.11s CPU      0.12s WALL (     406 calls)
+     vloc_psi     :      3.46s CPU      3.51s WALL (     406 calls)
+     add_vuspsi   :      0.09s CPU      0.09s WALL (     406 calls)
+
+     General routines
+     calbec       :      0.11s CPU      0.12s WALL (     406 calls)
+     fft          :      0.01s CPU      0.02s WALL (      10 calls)
+     fftw         :      3.06s CPU      3.10s WALL (    7454 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :      5.07s CPU      5.19s WALL
+
+ 
+   This run was terminated on:  14:44: 2   3Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

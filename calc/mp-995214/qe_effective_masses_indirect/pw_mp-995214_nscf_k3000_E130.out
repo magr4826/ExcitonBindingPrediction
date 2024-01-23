@@ -1,0 +1,272 @@
+
+     Program PWSCF v.7.1 starts on  3Jan2024 at 23:13:31 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     248951 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from pw_mp-995214_nscf_k3000_E130.in
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     out/mp-995214.save/
+     Atomic positions from file used, from input discarded
+ 
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1462    1462    385               173326   173326   23385
+     Max        1463    1463    386               173331   173331   23390
+     Sum       11699   11699   3081              1386623  1386623  187095
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            8
+     lattice parameter (alat)  =      16.1699  a.u.
+     unit-cell volume          =    6924.6011 (a.u.)^3
+     number of atoms/cell      =           48
+     number of atomic types    =            5
+     number of electrons       =       320.00
+     number of Kohn-Sham states=          320
+     kinetic-energy cutoff     =     130.0000  Ry
+     charge density cutoff     =     520.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  16.169867  celldm(2)=   1.081075  celldm(3)=   1.515025
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.081075   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.515025 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.925005  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.660055 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/C.upf
+     MD5 check sum: 3d2597e5eef38528f7293c089e88409c
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     PseudoPot. # 2 for H  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/H.upf
+     MD5 check sum: ae0d01b4bdfb70e4e0e3a1de63306ab0
+     Pseudo is Norm-conserving, Zval =  1.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+
+     PseudoPot. # 3 for I  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/I.upf
+     MD5 check sum: 2bc24df9af9f874725967c58cc477d99
+     Pseudo is Norm-conserving, Zval = 17.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 4 for N  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/N.upf
+     MD5 check sum: 505747f69e3b1670e9a20de136ca1593
+     Pseudo is Norm-conserving, Zval =  5.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     PseudoPot. # 5 for Pb read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Pb.upf
+     MD5 check sum: 18da7c9819a8d2a15024df9e07e1e14a
+     Pseudo is Norm-conserving, Zval = 14.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  8 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+                l(7) =   3
+                l(8) =   3
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        H              1.00     1.00790     H ( 1.00)
+        I             17.00   126.90450     I ( 1.00)
+        N              5.00    14.00670     N ( 1.00)
+        Pb            14.00   207.20000     Pb( 1.00)
+
+      8 Sym. Ops., with inversion, found ( 6 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (   0.4942640   0.1545656   1.0383615  )
+         2           H   tau(   2) = (   0.5057360   0.9265092   0.4766631  )
+         3           H   tau(   3) = (   0.0057360   0.6951030   0.4766631  )
+         4           H   tau(   4) = (   0.9942641   0.3859718   1.0383615  )
+         5           H   tau(   5) = (   0.5057360   0.9265092   0.2808492  )
+         6           H   tau(   6) = (   0.4942640   0.1545656   1.2341755  )
+         7           H   tau(   7) = (   0.9942641   0.3859718   1.2341755  )
+         8           H   tau(   8) = (   0.0057360   0.6951030   0.2808492  )
+         9           H   tau(   9) = (   0.3380590   0.0850071   1.1362685  )
+        10           H   tau(  10) = (   0.6619410   0.9960677   0.3787562  )
+        11           H   tau(  11) = (   0.1619410   0.6255445   0.3787562  )
+        12           H   tau(  12) = (   0.8380591   0.4555303   1.1362685  )
+        13           H   tau(  13) = (   0.4947750   0.9512258   1.0313697  )
+        14           H   tau(  14) = (   0.5052250   0.1298490   0.4836550  )
+        15           H   tau(  15) = (   0.0052250   0.4106884   0.4836550  )
+        16           H   tau(  16) = (   0.9947751   0.6703864   1.0313697  )
+        17           H   tau(  17) = (   0.5052250   0.1298490   0.2738574  )
+        18           H   tau(  18) = (   0.4947750   0.9512258   1.2411673  )
+        19           H   tau(  19) = (   0.9947751   0.6703864   1.2411673  )
+        20           H   tau(  20) = (   0.0052250   0.4106884   0.2738574  )
+        21           H   tau(  21) = (   0.6598480   1.0266567   1.1362685  )
+        22           H   tau(  22) = (   0.3401520   0.0544181   0.3787562  )
+        23           H   tau(  23) = (   0.8401521   0.4861193   0.3787562  )
+        24           H   tau(  24) = (   0.1598480   0.5949555   1.1362685  )
+        25           Pb  tau(  25) = (   0.5000000   0.5405374   0.0000000  )
+        26           Pb  tau(  26) = (   0.0000000   0.0000000   0.0000000  )
+        27           Pb  tau(  27) = (   0.5000000   0.5405374   0.7575123  )
+        28           Pb  tau(  28) = (   0.0000000   0.0000000   0.7575123  )
+        29           C   tau(  29) = (   0.5323550   1.0138730   1.1362685  )
+        30           C   tau(  30) = (   0.4676450   0.0672018   0.3787562  )
+        31           C   tau(  31) = (   0.9676451   0.4733356   0.3787562  )
+        32           C   tau(  32) = (   0.0323550   0.6077392   1.1362685  )
+        33           I   tau(  33) = (   0.5377330   0.5541546   1.1362685  )
+        34           I   tau(  34) = (   0.4622670   0.5269202   0.3787562  )
+        35           I   tau(  35) = (   0.9622671   0.0136172   0.3787562  )
+        36           I   tau(  36) = (   0.0377330   1.0674576   1.1362685  )
+        37           I   tau(  37) = (   0.8160661   0.7490108   0.0335532  )
+        38           I   tau(  38) = (   0.1839340   0.3320640   1.4814714  )
+        39           I   tau(  39) = (   0.6839340   0.2084734   1.4814714  )
+        40           I   tau(  40) = (   0.3160660   0.8726014   0.0335532  )
+        41           I   tau(  41) = (   0.1839340   0.3320640   0.7910656  )
+        42           I   tau(  42) = (   0.8160661   0.7490108   0.7239591  )
+        43           I   tau(  43) = (   0.3160660   0.8726014   0.7239591  )
+        44           I   tau(  44) = (   0.6839340   0.2084734   0.7910656  )
+        45           N   tau(  45) = (   0.4596090   0.0917433   1.1362685  )
+        46           N   tau(  46) = (   0.5403910   0.9893315   0.3787562  )
+        47           N   tau(  47) = (   0.0403910   0.6322806   0.3787562  )
+        48           N   tau(  48) = (   0.9596091   0.4487941   1.1362685  )
+
+     number of k points=   125  Gaussian smearing, width (Ry)=  0.0005
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1386623 G-vectors     FFT dimensions: ( 120, 128, 180)
+
+     Estimated max dynamical RAM per process >     778.38 MB
+
+     Estimated total dynamical RAM >       6.08 GB
+
+     The potential is recalculated from file :
+     out/mp-995214.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  5.00E-06,  avg # of iterations = 35.1
+
+     total cpu time spent up to now is    19827.3 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     4.5192 ev
+     (compare with:     4.5052 eV, computed in scf)
+
+     Writing all to output data dir out/mp-995214.save/
+ 
+     init_run     :      2.65s CPU      2.76s WALL (       1 calls)
+     electrons    :  19243.24s CPU  19821.57s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.24s CPU      0.29s WALL (       1 calls)
+     hinit0       :      1.69s CPU      1.72s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :  19243.24s CPU  19821.57s WALL (       1 calls)
+     v_of_rho     :      0.21s CPU      0.24s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      5.97s CPU      6.03s WALL (     125 calls)
+     init_us_2:cp :      5.97s CPU      6.03s WALL (     125 calls)
+     cegterg      :  18424.97s CPU  18952.00s WALL (     275 calls)
+
+     Called by *egterg:
+     cdiaghg      :    827.85s CPU    882.91s WALL (    4514 calls)
+     h_psi        :   8734.01s CPU   9175.54s WALL (    4789 calls)
+     g_psi        :     72.19s CPU     72.26s WALL (    4389 calls)
+
+     Called by h_psi:
+     h_psi:calbec :   1504.23s CPU   1506.91s WALL (    4789 calls)
+     vloc_psi     :   5591.36s CPU   6016.83s WALL (    4789 calls)
+     add_vuspsi   :   1584.26s CPU   1584.54s WALL (    4789 calls)
+
+     General routines
+     calbec       :   1504.20s CPU   1506.89s WALL (    4789 calls)
+     fft          :      0.08s CPU      0.10s WALL (      10 calls)
+     fftw         :   4726.07s CPU   5147.20s WALL ( 1340080 calls)
+     davcio       :      0.71s CPU    477.52s WALL (     250 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :      5h31m CPU      5h51m WALL
+
+ 
+   This run was terminated on:   5: 4:46   4Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

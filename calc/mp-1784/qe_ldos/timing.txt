@@ -1,0 +1,2 @@
+qe_ldos.py                   71.61 s  8 cores
+qe_ldos.py                   33.49 s  8 cores

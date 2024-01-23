@@ -1,0 +1,43 @@
+&CONTROL
+  calculation = 'nscf',
+  disk_io = 'medium',
+  outdir = 'out/',
+  prefix = 'mp-22870',
+  pseudo_dir = '/usr/scratch4/magr4985/MG/devEb/pseudo/SG15',
+/
+&SYSTEM
+  celldm(1) = 8.671480637893243,
+  celldm(2) = 2.684664344701177,
+  celldm(3) = 1.0029787219792876,
+  degauss = 0.0004593661607577953,
+  ecutwfc = 130,
+  force_symmorphic = .FALSE.,
+  ibrav = 9,
+  nbnd = 40,
+  nosym = .FALSE.,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  nat = 4,
+  ntyp = 2,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diago_full_acc = .TRUE.,
+  diago_thr_init = 5d-06,
+  diagonalization = 'david',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Br  79.9040 Br.upf
+  In  114.8180 In.upf
+ATOMIC_POSITIONS crystal
+  In 0.39344638 0.39344630 0.25000002
+  In 0.60655378 0.60655378 0.75000006
+  Br 0.15127386 0.15127378 0.25000002
+  Br 0.84872630 0.84872630 0.75000006
+K_POINTS automatic
+  16 16 24 0 0 0
+

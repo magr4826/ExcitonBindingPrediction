@@ -1,0 +1,11 @@
+&inputpp
+outdir = 'out/'
+prefix = 'mp-2160'
+seedname = 'mp-2160'
+spin_component = 'none'
+write_mmn = .true.
+write_amn = .true.
+write_unk = False
+scdm_proj = .true.
+scdm_entanglement = 'isolated'
+/

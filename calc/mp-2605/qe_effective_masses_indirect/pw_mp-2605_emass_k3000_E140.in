@@ -1,0 +1,45 @@
+&CONTROL
+  calculation = 'nscf',
+  disk_io = 'nowf',
+  outdir = 'out/',
+  prefix = 'mp-2605',
+  pseudo_dir = '/usr/scratch4/magr4985/MG/devEb/pseudo/SG15',
+/
+&SYSTEM
+  celldm(1) = 9.084123327580512,
+  degauss = 0.0004593661607577953,
+  ecutwfc = 140,
+  ibrav = 2,
+  nbnd = 16,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  nat = 2,
+  ntyp = 2,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diago_full_acc = .TRUE.,
+  diago_thr_init = 5d-06,
+  diagonalization = 'paro',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Ca  40.0780 Ca.upf
+  O  15.9994 O.upf
+ATOMIC_POSITIONS crystal
+  Ca 0.00000000 0.00000000 0.00000000
+  O 0.49999996 0.50000004 0.49999996
+K_POINTS tpiba
+7
+0.0 -1.000000000000054 0.0 1
+0.01 -1.000000000000054 0.0 1
+-0.01 -1.000000000000054 0.0 1 
+0.0 -0.990000000000054 0.0 1
+0.0 -1.010000000000054 0.0 1 
+0.0 -1.000000000000054 0.01 1
+0.0 -1.000000000000054 -0.01 1 
+
+

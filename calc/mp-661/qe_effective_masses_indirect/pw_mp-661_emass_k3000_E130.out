@@ -1,0 +1,238 @@
+
+     Program PWSCF v.7.1 starts on  3Jan2024 at 14:31:47 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     247769 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from pw_mp-661_emass_k3000_E130.in
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     out/mp-661.save/
+     Atomic positions from file used, from input discarded
+ 
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         157     157     39                 7187     7187     899
+     Max         158     158     40                 7192     7192     904
+     Sum        1261    1261    313                57513    57513    7211
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       5.9122  a.u.
+     unit-cell volume          =     286.9883 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        32.00
+     number of Kohn-Sham states=           32
+     kinetic-energy cutoff     =     130.0000  Ry
+     charge density cutoff     =     520.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   5.912174  celldm(2)=   0.000000  celldm(3)=   1.603584
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.603584 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.623603 )  
+
+
+     PseudoPot. # 1 for Al read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Al.upf
+     MD5 check sum: 61098d588df6d88baccfd5e59f8f1e90
+     Pseudo is Norm-conserving, Zval = 11.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     PseudoPot. # 2 for N  read from file:
+     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/N.upf
+     MD5 check sum: 505747f69e3b1670e9a20de136ca1593
+     Pseudo is Norm-conserving, Zval =  5.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     atomic species   valence    mass     pseudopotential
+        Al            11.00    26.98150     Al( 1.00)
+        N              5.00    14.00670     N ( 1.00)
+
+     12 Sym. Ops. (no inversion) found ( 6 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Al  tau(   1) = (   0.0000000   0.5773502   0.8006489  )
+         2           Al  tau(   2) = (   0.5000000   0.2886752   1.6024411  )
+         3           N   tau(   3) = (   0.0000000   0.5773502   1.4122977  )
+         4           N   tau(   4) = (   0.5000000   0.2886752   0.6105055  )
+
+     number of k points=     7  Gaussian smearing, width (Ry)=  0.0005
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.2857143
+        k(    2) = (   0.0100000   0.0000000   0.0000000), wk =   0.2857143
+        k(    3) = (  -0.0100000   0.0000000   0.0000000), wk =   0.2857143
+        k(    4) = (   0.0000000   0.0100000   0.0000000), wk =   0.2857143
+        k(    5) = (   0.0000000  -0.0100000   0.0000000), wk =   0.2857143
+        k(    6) = (   0.0000000   0.0000000   0.0100000), wk =   0.2857143
+        k(    7) = (   0.0000000   0.0000000  -0.0100000), wk =   0.2857143
+
+     Dense  grid:    57513 G-vectors     FFT dimensions: (  45,  45,  72)
+
+     Estimated max dynamical RAM per process >       8.34 MB
+
+     Estimated total dynamical RAM >      66.75 MB
+
+     The potential is recalculated from file :
+     out/mp-661.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     ParO style diagonalization
+
+     ethr =  5.00E-06,  avg # of iterations = 17.5
+
+     total cpu time spent up to now is        3.6 secs
+
+     End of band structure calculation
+
+          k = 0.0000 0.0000 0.0000 (  7211 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7786  -3.6832   3.3589   8.4260   8.4260   9.0715   9.0715   9.2681
+    13.3369  15.8174  19.7149  20.3529  20.3529  22.2062  22.2929  22.2929
+    23.7669  23.7669  23.9843  26.5668  26.5668  28.5339  31.3709  31.9416
+
+          k = 0.0100 0.0000 0.0000 (  7187 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6826   3.3601   8.4213   8.4246   9.0664   9.0714   9.2678
+    13.3421  15.8217  19.7112  20.3450  20.3557  22.2073  22.2896  22.2944
+    23.7082  23.7609  24.0473  26.5687  26.5768  28.5462  31.3748  31.9357
+
+          k =-0.0100 0.0000 0.0000 (  7187 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6826   3.3601   8.4213   8.4246   9.0664   9.0714   9.2678
+    13.3421  15.8217  19.7112  20.3450  20.3557  22.2073  22.2896  22.2944
+    23.7082  23.7609  24.0473  26.5687  26.5768  28.5462  31.3748  31.9357
+
+          k = 0.0000 0.0100 0.0000 (  7191 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6826   3.3601   8.4213   8.4246   9.0664   9.0714   9.2678
+    13.3421  15.8217  19.7112  20.3450  20.3557  22.2073  22.2897  22.2944
+    23.7082  23.7609  24.0473  26.5687  26.5768  28.5462  31.3748  31.9357
+
+          k = 0.0000-0.0100 0.0000 (  7191 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6826   3.3601   8.4213   8.4246   9.0664   9.0714   9.2678
+    13.3421  15.8217  19.7112  20.3450  20.3557  22.2073  22.2897  22.2944
+    23.7082  23.7609  24.0473  26.5687  26.5768  28.5462  31.3748  31.9357
+
+          k = 0.0000 0.0000 0.0100 (  7187 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6852   3.3624   8.4264   8.4264   9.0711   9.0711   9.2618
+    13.3423  15.8181  19.7131  20.3525  20.3525  22.1957  22.2888  22.2888
+    23.7713  23.7713  23.9940  26.5737  26.5737  28.5342  31.3769  31.9326
+
+          k = 0.0000 0.0000-0.0100 (  7187 PWs)   bands (ev):
+
+   -91.4208 -91.4199 -52.9474 -52.9375 -52.9237 -52.9237 -52.9220 -52.9220
+    -5.7776  -3.6852   3.3624   8.4264   8.4264   9.0711   9.0711   9.2618
+    13.3423  15.8181  19.7131  20.3525  20.3525  22.1957  22.2888  22.2888
+    23.7713  23.7713  23.9940  26.5737  26.5737  28.5342  31.3769  31.9326
+
+     the Fermi energy is    12.7091 ev
+     (compare with:    12.7091 eV, computed in scf)
+
+     Writing all to output data dir out/mp-661.save/
+ 
+     init_run     :      0.10s CPU      0.14s WALL (       1 calls)
+     electrons    :      2.54s CPU      3.34s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.02s CPU      0.03s WALL (       1 calls)
+     hinit0       :      0.02s CPU      0.04s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      2.54s CPU      3.34s WALL (       1 calls)
+     v_of_rho     :      0.01s CPU      0.01s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.00s WALL (       7 calls)
+     init_us_2:cp :      0.00s CPU      0.00s WALL (       7 calls)
+     paro_k       :      2.37s CPU      2.44s WALL (       7 calls)
+
+     Called by paro_*:
+     h_psi        :      1.87s CPU      1.92s WALL (     388 calls)
+     g_psi        :      0.03s CPU      0.03s WALL (    4815 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.06s CPU      0.06s WALL (     388 calls)
+     vloc_psi     :      1.76s CPU      1.81s WALL (     388 calls)
+     add_vuspsi   :      0.05s CPU      0.05s WALL (     388 calls)
+
+     General routines
+     calbec       :      0.06s CPU      0.06s WALL (     388 calls)
+     fft          :      0.00s CPU      0.02s WALL (      10 calls)
+     fftw         :      1.57s CPU      1.62s WALL (    8034 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :      2.73s CPU      3.60s WALL
+
+ 
+   This run was terminated on:  14:31:51   3Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

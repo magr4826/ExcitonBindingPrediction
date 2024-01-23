@@ -1,0 +1,13 @@
+&inputpp
+    prefix = 'mp-22916'
+    outdir='out/',
+    plot_num=10,
+    emin = 5.952842775891086,
+    emax = 6.952842775891086,
+    delta_e = 0.1,
+/
+&plot
+    iflag=3,
+    output_format=6,
+    fileout='ldos.cube',
+/

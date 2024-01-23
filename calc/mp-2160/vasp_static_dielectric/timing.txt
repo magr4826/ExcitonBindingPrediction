@@ -1,0 +1,1 @@
+vasp_static_dielectric.py  53210.85 s  8 cores

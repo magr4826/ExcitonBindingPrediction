@@ -1,0 +1,11 @@
+&inputpp
+outdir = 'out/'
+prefix = 'mp-22862'
+seedname = 'mp-22862'
+spin_component = 'none'
+write_mmn = .true.
+write_amn = .true.
+write_unk = False
+scdm_proj = .true.
+scdm_entanglement = 'isolated'
+/
