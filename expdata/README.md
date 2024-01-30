@@ -3,13 +3,13 @@ for each material that we found in our literature review, as well as the associa
 Materials Project identifiers and names from the Materials Project. All binding energies 
 are given in meV.
 
-All exciton binding found in the literature review including the references and
-experimental method with comments from our side is gathered in the *exp_data_collection.xlsx* 
+All exciton binding energies found in the literature review including the references and
+experimental method with comments from our side are gathered in the *exp_data_collection.xlsx* 
 file in this folder.
 
 We are aware that there are more binding energies available in the literature. Some were left 
 out due to uncertainties in the experimental method/data and data analysis method used. Furthermore
-we ignored all materials that contained transition metals, thanides and actinides due to the fact 
+we ignored all materials that contained transition metals, lanthanides and actinides due to the fact 
 that strong correlation effects can heavily affect the electronic structure and exciton physics 
 of these materials. These effects are difficult to analyse just using the employed standard density 
 functional theory. Otherwise we also did not calculate materials like Ge, AlAs, InN as they are metals 
