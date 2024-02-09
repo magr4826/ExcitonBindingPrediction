@@ -73,8 +73,8 @@ def write_pw(
     electrons = {
         "conv_thr": 1e-10,
         "diagonalization": diagonalization,
-        "diago_full_acc": True,
-        "diago_thr_init": 5e-6,
+        "diago_full_acc": True, # completely unnecessary for scf calculation
+        "diago_thr_init": 5e-6, # also completely unnecessary for scf calculation
     }
     input = qe_helper.qe_PWInput(
         calc_data.structure,
