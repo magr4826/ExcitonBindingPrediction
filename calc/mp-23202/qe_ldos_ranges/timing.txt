@@ -1,0 +1,1 @@
+qe_ldos_ranges.py           680.25 s  16 cores

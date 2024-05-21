@@ -1,0 +1,39 @@
+&CONTROL
+  calculation = 'nscf',
+  disk_io = 'low',
+  outdir = 'out/',
+  prefix = 'mp-2064',
+  pseudo_dir = '/usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15',
+/
+&SYSTEM
+  celldm(1) = 6.369221629178545,
+  degauss = 0.0004593661607577953,
+  ecutwfc = 130,
+  force_symmorphic = .FALSE.,
+  ibrav = 1,
+  nbnd = 16,
+  nosym = .FALSE.,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  nat = 2,
+  ntyp = 2,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diago_full_acc = .TRUE.,
+  diago_thr_init = 5d-06,
+  diagonalization = 'david',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  F  18.9984 F.upf
+  Rb  85.4678 Rb.upf
+ATOMIC_POSITIONS crystal
+  Rb 0.00000000 0.00000000 0.00000000
+  F 0.50000004 0.50000004 0.50000004
+K_POINTS automatic
+  12 12 12 0 0 0
+

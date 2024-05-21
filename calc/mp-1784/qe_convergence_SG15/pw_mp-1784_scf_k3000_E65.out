@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 14:28:40 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:10:54 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     248111 MiB available memory on the printing compute node when the environment starts
+     247353 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-1784_scf_k3000_E65.in
 Warning: card &CELL ignored
@@ -24,7 +24,7 @@ Warning: card / ignored
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
  
-     R & G space division:  proc/nbgrp/npool/nimage =       8
+     R & G space division:  proc/nbgrp/npool/nimage =      16
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -32,8 +32,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         144     144     43                 3234     3234     533
-     Max         145     145     44                 3237     3237     536
+     Min          72      72     21                 1617     1617     266
+     Max          73      73     22                 1620     1620     269
      Sum        1159    1159    349                25893    25893    4279
  
      Using Slab Decomposition
@@ -70,8 +70,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Cs read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Cs.upf
-     MD5 check sum: 1338a448a724a31fb6a2dbac20c1c7e6
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Cs.upf
+     MD5 check sum: 74aa1fd125ef9ec93322f365f25225f6
      Pseudo is Norm-conserving, Zval =  9.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  6 beta functions with: 
@@ -83,8 +83,8 @@ Warning: card / ignored
                 l(6) =   2
 
      PseudoPot. # 2 for F  read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/F.upf
-     MD5 check sum: 24dce47753c7134a0159dc9c6586d93a
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/F.upf
+     MD5 check sum: 1d8275f47d602dd53cad6bcdc0eda7dc
      Pseudo is Norm-conserving, Zval =  7.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  4 beta functions with: 
@@ -184,9 +184,9 @@ Warning: card / ignored
 
      Dense  grid:    25893 G-vectors     FFT dimensions: (  45,  45,  45)
 
-     Estimated max dynamical RAM per process >      12.45 MB
+     Estimated max dynamical RAM per process >       7.51 MB
 
-     Estimated total dynamical RAM >      99.60 MB
+     Estimated total dynamical RAM >     120.23 MB
 
      Initial potential from superposition of free atoms
 
@@ -199,81 +199,81 @@ Warning: card / ignored
 
      iteration #  1     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
-     ethr =  5.00E-06,  avg # of iterations = 20.4
+     ethr =  5.00E-06,  avg # of iterations = 20.3
 
-     total cpu time spent up to now is        9.0 secs
+     total cpu time spent up to now is        5.5 secs
 
-     total energy              =     -88.33579238 Ry
-     estimated scf accuracy    <       0.11880964 Ry
+     total energy              =     -88.33579317 Ry
+     estimated scf accuracy    <       0.11880889 Ry
 
      iteration #  2     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  7.43E-04,  avg # of iterations =  5.0
 
-     total cpu time spent up to now is       11.4 secs
+     total cpu time spent up to now is        6.8 secs
 
-     total energy              =     -88.35118293 Ry
-     estimated scf accuracy    <       0.13883752 Ry
+     total energy              =     -88.35118353 Ry
+     estimated scf accuracy    <       0.13883300 Ry
 
      iteration #  3     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  7.43E-04,  avg # of iterations =  3.5
 
-     total cpu time spent up to now is       13.2 secs
+     total cpu time spent up to now is        7.6 secs
 
-     total energy              =     -88.38292520 Ry
-     estimated scf accuracy    <       0.00343663 Ry
+     total energy              =     -88.38292526 Ry
+     estimated scf accuracy    <       0.00343617 Ry
 
      iteration #  4     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  2.15E-05,  avg # of iterations =  4.7
 
-     total cpu time spent up to now is       15.4 secs
+     total cpu time spent up to now is        8.9 secs
 
-     total energy              =     -88.38355263 Ry
-     estimated scf accuracy    <       0.00003762 Ry
+     total energy              =     -88.38355264 Ry
+     estimated scf accuracy    <       0.00003752 Ry
 
      iteration #  5     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  2.35E-07,  avg # of iterations =  5.5
 
-     total cpu time spent up to now is       18.0 secs
+     total cpu time spent up to now is       10.6 secs
 
-     total energy              =     -88.38355762 Ry
+     total energy              =     -88.38355763 Ry
      estimated scf accuracy    <       0.00000222 Ry
 
      iteration #  6     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
-     ethr =  1.39E-08,  avg # of iterations =  5.2
+     ethr =  1.39E-08,  avg # of iterations =  5.1
 
-     total cpu time spent up to now is       20.7 secs
+     total cpu time spent up to now is       11.7 secs
 
      total energy              =     -88.38355824 Ry
      estimated scf accuracy    <       0.00000021 Ry
 
      iteration #  7     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
-     ethr =  1.33E-09,  avg # of iterations =  4.7
+     ethr =  1.32E-09,  avg # of iterations =  4.7
 
-     total cpu time spent up to now is       22.9 secs
+     total cpu time spent up to now is       13.0 secs
 
      total energy              =     -88.38355829 Ry
-     estimated scf accuracy    <          2.2E-09 Ry
+     estimated scf accuracy    <          2.1E-09 Ry
 
      iteration #  8     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
-     ethr =  1.40E-11,  avg # of iterations =  5.5
+     ethr =  1.34E-11,  avg # of iterations =  5.5
 
-     total cpu time spent up to now is       25.4 secs
+     total cpu time spent up to now is       15.1 secs
 
      total energy              =     -88.38355829 Ry
-     estimated scf accuracy    <          1.3E-10 Ry
+     estimated scf accuracy    <          1.4E-10 Ry
 
      iteration #  9     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
-     ethr =  8.28E-13,  avg # of iterations =  4.3
+     ethr =  9.03E-13,  avg # of iterations =  4.3
 
-     total cpu time spent up to now is       27.5 secs
+     total cpu time spent up to now is       16.3 secs
 
      End of self-consistent calculation
 
@@ -640,60 +640,60 @@ Warning: card / ignored
      the Fermi energy is     7.1871 ev
 
 !    total energy              =     -88.38355829 Ry
-     estimated scf accuracy    <          7.2E-13 Ry
+     estimated scf accuracy    <          7.9E-13 Ry
      smearing contrib. (-TS)   =      -0.00000000 Ry
      internal energy E=F+TS    =     -88.38355829 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =     -32.06510147 Ry
-     hartree contribution      =      24.00853393 Ry
-     xc contribution           =     -15.78141648 Ry
+     one-electron contribution =     -32.06510129 Ry
+     hartree contribution      =      24.00853370 Ry
+     xc contribution           =     -15.78141644 Ry
      ewald contribution        =     -64.54557426 Ry
 
      convergence has been achieved in   9 iterations
 
      Writing all to output data dir out/mp-1784.save/
  
-     init_run     :      0.44s CPU      0.47s WALL (       1 calls)
-     electrons    :     25.28s CPU     26.96s WALL (       1 calls)
+     init_run     :      0.29s CPU      0.31s WALL (       1 calls)
+     electrons    :     11.79s CPU     16.30s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      0.39s CPU      0.41s WALL (       1 calls)
-     potinit      :      0.02s CPU      0.02s WALL (       1 calls)
-     hinit0       :      0.01s CPU      0.02s WALL (       1 calls)
+     wfcinit      :      0.25s CPU      0.26s WALL (       1 calls)
+     potinit      :      0.01s CPU      0.01s WALL (       1 calls)
+     hinit0       :      0.01s CPU      0.01s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :     23.53s CPU     25.14s WALL (       9 calls)
-     sum_band     :      1.69s CPU      1.75s WALL (       9 calls)
-     v_of_rho     :      0.06s CPU      0.06s WALL (      10 calls)
-     mix_rho      :      0.01s CPU      0.01s WALL (       9 calls)
+     c_bands      :     11.01s CPU     14.80s WALL (       9 calls)
+     sum_band     :      0.75s CPU      0.77s WALL (       9 calls)
+     v_of_rho     :      0.02s CPU      0.02s WALL (      10 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       9 calls)
 
      Called by c_bands:
-     init_us_2    :      0.16s CPU      0.17s WALL (    1368 calls)
-     init_us_2:cp :      0.15s CPU      0.16s WALL (    1368 calls)
-     paro_k       :     23.02s CPU     24.20s WALL (     648 calls)
+     init_us_2    :      0.05s CPU      0.05s WALL (    1368 calls)
+     init_us_2:cp :      0.05s CPU      0.05s WALL (    1368 calls)
+     paro_k       :     10.85s CPU     11.34s WALL (     648 calls)
 
      Called by paro_*:
-     h_psi        :     19.39s CPU     20.32s WALL (   12614 calls)
-     g_psi        :      0.27s CPU      0.29s WALL (   77070 calls)
+     h_psi        :      9.44s CPU      9.86s WALL (   12560 calls)
+     g_psi        :      0.08s CPU      0.09s WALL (   76822 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.57s CPU      0.62s WALL (   12614 calls)
-     vloc_psi     :     18.33s CPU     19.17s WALL (   12614 calls)
-     add_vuspsi   :      0.37s CPU      0.39s WALL (   12614 calls)
+     h_psi:calbec :      0.20s CPU      0.21s WALL (   12560 calls)
+     vloc_psi     :      9.09s CPU      9.49s WALL (   12560 calls)
+     add_vuspsi   :      0.10s CPU      0.10s WALL (   12560 calls)
 
      General routines
-     calbec       :      0.53s CPU      0.59s WALL (   12614 calls)
-     fft          :      0.03s CPU      0.03s WALL (      99 calls)
+     calbec       :      0.19s CPU      0.20s WALL (   12560 calls)
+     fft          :      0.01s CPU      0.02s WALL (      99 calls)
      ffts         :      0.00s CPU      0.00s WALL (       9 calls)
-     fftw         :     17.97s CPU     18.75s WALL (  144512 calls)
+     fftw         :      9.29s CPU      9.68s WALL (  144066 calls)
  
      Parallel routines
  
-     PWSCF        :     25.82s CPU     27.74s WALL
+     PWSCF        :     12.24s CPU     17.23s WALL
 
  
-   This run was terminated on:  14:29: 7   3Jan2024            
+   This run was terminated on:  15:11:12   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

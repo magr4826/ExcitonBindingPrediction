@@ -4,7 +4,7 @@ This repository was created to analyze how the exciton binding energies of vario
 semiconducting and insulting materials are related to various ground state properties,
 such as the band gap, dielectric constant, ionizity and others. More information can
 be found in the associated paper. You may need to adjust the *start_calc* function in 
-*src/utitls/basic_utils* to suit the supercomputer that you are using or set *calc_setup = "local"* 
+*src/utils/basic_utils* to suit the supercomputer that you are using or set *calc_setup = "local"* 
 in the *main.py* file to perform single calculations on the current interactive node.
 
 **REQUIREMENTS:**
@@ -19,11 +19,17 @@ in the *main.py* file to perform single calculations on the current interactive 
 
 **SETUP/USAGE**
 
+There are two ways to supply structures to the workflows, either from the Materials Project or as a .cif file.
+If the structure that you want to analyze is on the Materials Project, simply proceed as follows:
 Create a file called *api_key.py* in the main directory that contains the following variable: api_key = *YOUR_API_KEY*, 
 where *YOUR_API_KEY* can be obtained from https://next-gen.materialsproject.org/api.
-Run the *main.py* script inside the main directory with the workflows and setting you want.
-Possible workflows are found in /src/workflows.
+Run the *main.py* script inside the main directory with the material-ids, workflows and settings you want.
 
+Otherwise, if the structures you are interested in are only available as .cif files, simply copy the .cif files into the *cifs* directory
+and run the *main_cif.py* script, indicating in it which cif-files you want to run, as well as settings and workflows, 
+same as for the *main.py* script.
+
+Possible workflows are found in /src/workflows.
 **ACKNOWLEDGEMENT**
 
 We want to thank Miguel A. L. Marques for the provision of the automated symmetry detection aiding the Quantum ESPRESSO workflows.

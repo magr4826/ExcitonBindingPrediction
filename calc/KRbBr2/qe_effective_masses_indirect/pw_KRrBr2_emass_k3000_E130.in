@@ -1,0 +1,48 @@
+&CONTROL
+  calculation = 'nscf',
+  disk_io = 'nowf',
+  outdir = 'out/',
+  prefix = 'KRrBr2',
+  pseudo_dir = '/usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15',
+/
+&SYSTEM
+  celldm(1) = 15.564163431528211,
+  degauss = 0.0004593661607577953,
+  ecutwfc = 130,
+  ibrav = 2,
+  nbnd = 32,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  nat = 4,
+  ntyp = 3,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diago_full_acc = .TRUE.,
+  diago_thr_init = 5d-06,
+  diagonalization = 'paro',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Br  79.9040 Br.upf
+  K  39.0983 K.upf
+  Rb  85.4678 Rb.upf
+ATOMIC_POSITIONS crystal
+  K 0.00000000 0.00000000 0.00000000
+  Rb 0.49999996 0.50000004 0.49999996
+  Br 0.74999998 0.75000013 0.74999998
+  Br 0.25000002 0.25000010 0.24999994
+K_POINTS tpiba
+7
+0.0 0.0 0.0 1
+0.01 0.0 0.0 1
+-0.01 0.0 0.0 1 
+0.0 0.01 0.0 1
+0.0 -0.01 0.0 1 
+0.0 0.0 0.01 1
+0.0 0.0 -0.01 1 
+
+

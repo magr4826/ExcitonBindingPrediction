@@ -1,0 +1,205 @@
+
+     Program PWSCF v.7.1 starts on 11Apr2024 at 15:14:35 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    16 processors
+
+     MPI processes distributed on     1 nodes
+     222808 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from pw_KRrBr2_nscf_k3000_E130.in
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     out/KRrBr2.save/
+     Atomic positions from file used, from input discarded
+ 
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         269     269     74                11786    11786    1700
+     Max         270     270     75                11791    11791    1703
+     Sum        4315    4315   1189               188621   188621   27221
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            2
+     lattice parameter (alat)  =      15.5642  a.u.
+     unit-cell volume          =     942.5781 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            3
+     number of electrons       =        32.00
+     number of Kohn-Sham states=           32
+     kinetic-energy cutoff     =     130.0000  Ry
+     charge density cutoff     =     520.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  15.564163  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  -0.500000   0.000000   0.500000 )  
+               a(2) = (   0.000000   0.500000   0.500000 )  
+               a(3) = (  -0.500000   0.500000   0.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = ( -1.000000 -1.000000  1.000000 )  
+               b(2) = (  1.000000  1.000000  1.000000 )  
+               b(3) = ( -1.000000  1.000000 -1.000000 )  
+
+
+     PseudoPot. # 1 for Br read from file:
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Br.upf
+     MD5 check sum: 5b50323dbf1c0ae0ed9e7f1e72c3f86c
+     Pseudo is Norm-conserving, Zval =  7.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for K  read from file:
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/K.upf
+     MD5 check sum: 254690d02b26e0029262a4c77e854448
+     Pseudo is Norm-conserving, Zval =  9.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 3 for Rb read from file:
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Rb.upf
+     MD5 check sum: bb775b689f47c500e9d7b0b27148fdc3
+     Pseudo is Norm-conserving, Zval =  9.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Br             7.00    79.90400     Br( 1.00)
+        K              9.00    39.09830     K ( 1.00)
+        Rb             9.00    85.46780     Rb( 1.00)
+
+     48 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           K   tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Rb  tau(   2) = (  -0.5000000   0.5000000   0.5000000  )
+         3           Br  tau(   3) = (  -0.7500000   0.7500001   0.7500001  )
+         4           Br  tau(   4) = (  -0.2500000   0.2500000   0.2500001  )
+
+     number of k points=   256  Gaussian smearing, width (Ry)=  0.0005
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   188621 G-vectors     FFT dimensions: (  80,  80,  80)
+
+     Estimated max dynamical RAM per process >      15.45 MB
+
+     Estimated total dynamical RAM >     247.13 MB
+
+     The potential is recalculated from file :
+     out/KRrBr2.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  5.00E-06,  avg # of iterations = 45.7
+
+     total cpu time spent up to now is      133.4 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     4.6738 ev
+     (compare with:     4.6731 eV, computed in scf)
+
+     Writing all to output data dir out/KRrBr2.save/
+ 
+     init_run     :      0.22s CPU      0.68s WALL (       1 calls)
+     electrons    :    118.67s CPU    132.25s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.01s WALL (       1 calls)
+     potinit      :      0.02s CPU      0.43s WALL (       1 calls)
+     hinit0       :      0.04s CPU      0.07s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    118.67s CPU    132.25s WALL (       1 calls)
+     v_of_rho     :      0.01s CPU      0.02s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.10s CPU      0.11s WALL (     256 calls)
+     init_us_2:cp :      0.10s CPU      0.11s WALL (     256 calls)
+     cegterg      :    104.27s CPU    105.95s WALL (     720 calls)
+
+     Called by *egterg:
+     cdiaghg      :     10.73s CPU     10.89s WALL (   11951 calls)
+     h_psi        :     80.71s CPU     82.15s WALL (   12671 calls)
+     g_psi        :      0.67s CPU      0.67s WALL (   11695 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      4.26s CPU      4.35s WALL (   12671 calls)
+     vloc_psi     :     72.38s CPU     73.65s WALL (   12671 calls)
+     add_vuspsi   :      3.63s CPU      3.70s WALL (   12671 calls)
+
+     General routines
+     calbec       :      4.24s CPU      4.34s WALL (   12671 calls)
+     fft          :      0.02s CPU      0.03s WALL (      10 calls)
+     fftw         :     65.14s CPU     66.31s WALL (  422876 calls)
+     davcio       :      0.08s CPU      2.75s WALL (     512 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :   2m 4.64s CPU   2m37.38s WALL
+
+ 
+   This run was terminated on:  15:17:13  11Apr2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

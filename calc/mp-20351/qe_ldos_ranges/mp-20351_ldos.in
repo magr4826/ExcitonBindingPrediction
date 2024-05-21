@@ -1,0 +1,13 @@
+&inputpp
+    prefix = 'mp-20351'
+    outdir='out/',
+    plot_num=10,
+    emin = 7.917830629710209,
+    emax = 9.117830629710209,
+    delta_e = 0.1,
+/
+&plot
+    iflag=3,
+    output_format=6,
+    fileout='ldos.cube',
+/

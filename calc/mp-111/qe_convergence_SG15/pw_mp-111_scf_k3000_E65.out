@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 14:26: 9 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:10:29 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     123425 MiB available memory on the printing compute node when the environment starts
+     219273 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-111_scf_k3000_E65.in
 Warning: card &CELL ignored
@@ -24,6 +24,7 @@ Warning: card / ignored
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
  
+     K-points division:     npool     =       2
      R & G space division:  proc/nbgrp/npool/nimage =       8
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
@@ -70,8 +71,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Ne read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Ne.upf
-     MD5 check sum: c5a1767964a47406567c5640d9a9be05
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Ne.upf
+     MD5 check sum: 56c1d532db00fbb77b1f83d77596279c
      Pseudo is Norm-conserving, Zval =  8.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  4 beta functions with: 
@@ -98,9 +99,9 @@ Warning: card / ignored
 
      Dense  grid:     8801 G-vectors     FFT dimensions: (  30,  30,  30)
 
-     Estimated max dynamical RAM per process >       2.93 MB
+     Estimated max dynamical RAM per process >       2.06 MB
 
-     Estimated total dynamical RAM >      23.42 MB
+     Estimated total dynamical RAM >      30.77 MB
 
      Initial potential from superposition of free atoms
 
@@ -113,33 +114,33 @@ Warning: card / ignored
 
      iteration #  1     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.00E-06,  avg # of iterations = 12.9
+     ethr =  5.00E-06,  avg # of iterations = 12.8
 
      Threshold (ethr) on eigenvalues was too large:
      Diagonalizing with lowered threshold
 
      Davidson diagonalization with overlap
-     ethr =  8.44E-08,  avg # of iterations =  2.3
+     ethr =  8.44E-08,  avg # of iterations =  2.2
 
-     total cpu time spent up to now is        1.6 secs
+     total cpu time spent up to now is        0.8 secs
 
      total energy              =     -61.36065127 Ry
-     estimated scf accuracy    <       0.00000713 Ry
+     estimated scf accuracy    <       0.00000712 Ry
 
      iteration #  2     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  8.91E-08,  avg # of iterations =  2.0
+     ethr =  8.90E-08,  avg # of iterations =  2.0
 
-     total cpu time spent up to now is        1.9 secs
+     total cpu time spent up to now is        0.9 secs
 
      total energy              =     -61.36065313 Ry
-     estimated scf accuracy    <       0.00000049 Ry
+     estimated scf accuracy    <       0.00000048 Ry
 
      iteration #  3     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  6.08E-09,  avg # of iterations =  2.1
+     ethr =  6.05E-09,  avg # of iterations =  2.1
 
-     total cpu time spent up to now is        2.2 secs
+     total cpu time spent up to now is        1.0 secs
 
      total energy              =     -61.36065321 Ry
      estimated scf accuracy    <       0.00000001 Ry
@@ -148,16 +149,16 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  1.32E-10,  avg # of iterations =  3.2
 
-     total cpu time spent up to now is        2.5 secs
+     total cpu time spent up to now is        1.1 secs
 
      total energy              =     -61.36065321 Ry
-     estimated scf accuracy    <          1.8E-10 Ry
+     estimated scf accuracy    <          1.7E-10 Ry
 
      iteration #  5     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  2.20E-12,  avg # of iterations =  2.6
+     ethr =  2.17E-12,  avg # of iterations =  2.6
 
-     total cpu time spent up to now is        2.9 secs
+     total cpu time spent up to now is        1.2 secs
 
      End of self-consistent calculation
 
@@ -171,56 +172,56 @@ Warning: card / ignored
      internal energy E=F+TS    =     -61.36065321 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =     -33.28248677 Ry
-     hartree contribution      =      19.34749182 Ry
-     xc contribution           =     -10.41102776 Ry
+     one-electron contribution =     -33.28248673 Ry
+     hartree contribution      =      19.34749177 Ry
+     xc contribution           =     -10.41102775 Ry
      ewald contribution        =     -37.01463051 Ry
 
      convergence has been achieved in   5 iterations
 
      Writing all to output data dir out/mp-111.save/
  
-     init_run     :      0.12s CPU      0.14s WALL (       1 calls)
-     electrons    :      2.42s CPU      2.67s WALL (       1 calls)
+     init_run     :      0.06s CPU      0.18s WALL (       1 calls)
+     electrons    :      0.89s CPU      1.07s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      0.11s CPU      0.12s WALL (       1 calls)
-     potinit      :      0.01s CPU      0.01s WALL (       1 calls)
-     hinit0       :      0.00s CPU      0.01s WALL (       1 calls)
+     wfcinit      :      0.04s CPU      0.10s WALL (       1 calls)
+     potinit      :      0.00s CPU      0.03s WALL (       1 calls)
+     hinit0       :      0.01s CPU      0.04s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :      2.19s CPU      2.42s WALL (       6 calls)
-     sum_band     :      0.22s CPU      0.24s WALL (       6 calls)
-     v_of_rho     :      0.01s CPU      0.01s WALL (       6 calls)
+     c_bands      :      0.80s CPU      0.93s WALL (       6 calls)
+     sum_band     :      0.08s CPU      0.08s WALL (       6 calls)
+     v_of_rho     :      0.01s CPU      0.02s WALL (       6 calls)
      mix_rho      :      0.00s CPU      0.00s WALL (       6 calls)
 
      Called by c_bands:
-     init_us_2    :      0.03s CPU      0.03s WALL (    1352 calls)
-     init_us_2:cp :      0.03s CPU      0.03s WALL (    1352 calls)
-     cegterg      :      2.13s CPU      2.32s WALL (     624 calls)
+     init_us_2    :      0.01s CPU      0.01s WALL (     676 calls)
+     init_us_2:cp :      0.01s CPU      0.01s WALL (     676 calls)
+     cegterg      :      0.77s CPU      0.82s WALL (     312 calls)
 
      Called by *egterg:
-     cdiaghg      :      0.30s CPU      0.33s WALL (    3127 calls)
-     h_psi        :      1.69s CPU      1.85s WALL (    3335 calls)
-     g_psi        :      0.02s CPU      0.02s WALL (    2607 calls)
+     cdiaghg      :      0.11s CPU      0.12s WALL (    1643 calls)
+     h_psi        :      0.62s CPU      0.71s WALL (    1747 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (    1383 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.05s CPU      0.06s WALL (    3335 calls)
-     vloc_psi     :      1.59s CPU      1.74s WALL (    3335 calls)
-     add_vuspsi   :      0.02s CPU      0.03s WALL (    3335 calls)
+     h_psi:calbec :      0.02s CPU      0.02s WALL (    1747 calls)
+     vloc_psi     :      0.59s CPU      0.67s WALL (    1747 calls)
+     add_vuspsi   :      0.01s CPU      0.01s WALL (    1747 calls)
 
      General routines
-     calbec       :      0.05s CPU      0.05s WALL (    3335 calls)
-     fft          :      0.00s CPU      0.01s WALL (      60 calls)
+     calbec       :      0.01s CPU      0.02s WALL (    1747 calls)
+     fft          :      0.00s CPU      0.05s WALL (      60 calls)
      ffts         :      0.00s CPU      0.00s WALL (       6 calls)
-     fftw         :      1.59s CPU      1.74s WALL (   46314 calls)
+     fftw         :      0.60s CPU      0.68s WALL (   23430 calls)
  
      Parallel routines
  
-     PWSCF        :      2.61s CPU      3.07s WALL
+     PWSCF        :      1.20s CPU      2.35s WALL
 
  
-   This run was terminated on:  14:26:13   3Jan2024            
+   This run was terminated on:  15:10:31   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

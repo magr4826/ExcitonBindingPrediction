@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 14:29:22 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:10:38 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     122201 MiB available memory on the printing compute node when the environment starts
+     245714 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-2758_scf_k3000_E65.in
 Warning: card &CELL ignored
@@ -24,7 +24,7 @@ Warning: card / ignored
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
  
-     R & G space division:  proc/nbgrp/npool/nimage =       8
+     R & G space division:  proc/nbgrp/npool/nimage =      16
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -32,8 +32,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         157     157     45                 3698     3698     585
-     Max         158     158     46                 3702     3702     587
+     Min          78      78     22                 1848     1848     291
+     Max          79      79     23                 1852     1852     294
      Sum        1261    1261    367                29603    29603    4693
  
      Using Slab Decomposition
@@ -70,8 +70,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Se read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Se.upf
-     MD5 check sum: c44afd8c4e480dd2a5f8f6cb06637de2
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Se.upf
+     MD5 check sum: e78e48a4f5d8ce1f8dc76ec1271f249c
      Pseudo is Norm-conserving, Zval =  6.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  6 beta functions with: 
@@ -83,8 +83,8 @@ Warning: card / ignored
                 l(6) =   2
 
      PseudoPot. # 2 for Sr read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Sr.upf
-     MD5 check sum: 7138e3241744793a1037e143c224f249
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Sr.upf
+     MD5 check sum: 3f9bc8d6f3e8472da0cbe0e6a3044a9f
      Pseudo is Norm-conserving, Zval = 10.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  6 beta functions with: 
@@ -186,16 +186,16 @@ Warning: card / ignored
 
      Dense  grid:    29603 G-vectors     FFT dimensions: (  45,  45,  45)
 
-     Estimated max dynamical RAM per process >      14.07 MB
+     Estimated max dynamical RAM per process >       8.36 MB
 
-     Estimated total dynamical RAM >     112.55 MB
+     Estimated total dynamical RAM >     133.72 MB
 
      Initial potential from superposition of free atoms
 
      starting charge      15.7013, renormalised to      16.0000
      Starting wfcs are random
 
-     total cpu time spent up to now is        0.5 secs
+     total cpu time spent up to now is        0.4 secs
 
      Self-consistent Calculation
 
@@ -209,86 +209,79 @@ Warning: card / ignored
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     ethr =  5.00E-06,  avg # of iterations = 18.8
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  5.00E-06,  avg # of iterations = 18.9
 
-     total cpu time spent up to now is        6.2 secs
+     total cpu time spent up to now is        3.4 secs
 
-     total energy              =     -81.45470924 Ry
-     estimated scf accuracy    <       0.08184552 Ry
+     total energy              =     -81.45471015 Ry
+     estimated scf accuracy    <       0.08184447 Ry
 
      iteration #  2     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.12E-04,  avg # of iterations =  2.9
+     ethr =  5.12E-04,  avg # of iterations =  3.0
 
-     total cpu time spent up to now is        7.7 secs
+     total cpu time spent up to now is        4.1 secs
 
-     total energy              =     -81.47622708 Ry
-     estimated scf accuracy    <       0.02698542 Ry
+     total energy              =     -81.47623104 Ry
+     estimated scf accuracy    <       0.02697566 Ry
 
      iteration #  3     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
      ethr =  1.69E-04,  avg # of iterations =  2.2
 
-     total cpu time spent up to now is        9.0 secs
+     total cpu time spent up to now is        4.8 secs
 
-     total energy              =     -81.48228028 Ry
-     estimated scf accuracy    <       0.00051282 Ry
+     total energy              =     -81.48228037 Ry
+     estimated scf accuracy    <       0.00051255 Ry
 
      iteration #  4     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  3.21E-06,  avg # of iterations =  4.7
+     ethr =  3.20E-06,  avg # of iterations =  4.5
 
-     total cpu time spent up to now is       10.8 secs
+     total cpu time spent up to now is        5.5 secs
 
-     total energy              =     -81.48233291 Ry
-     estimated scf accuracy    <       0.00000677 Ry
+     total energy              =     -81.48233292 Ry
+     estimated scf accuracy    <       0.00000676 Ry
 
      iteration #  5     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  4.23E-08,  avg # of iterations =  6.4
+     ethr =  4.22E-08,  avg # of iterations =  6.6
 
-     total cpu time spent up to now is       12.6 secs
+     total cpu time spent up to now is        6.8 secs
 
      total energy              =     -81.48233452 Ry
      estimated scf accuracy    <       0.00000025 Ry
 
      iteration #  6     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  1.58E-09,  avg # of iterations =  5.8
+     ethr =  1.58E-09,  avg # of iterations =  5.6
 
-     total cpu time spent up to now is       14.4 secs
+     total cpu time spent up to now is        8.2 secs
 
      total energy              =     -81.48233461 Ry
      estimated scf accuracy    <          9.8E-09 Ry
@@ -297,16 +290,16 @@ Warning: card / ignored
      Davidson diagonalization with overlap
      ethr =  6.11E-11,  avg # of iterations =  4.4
 
-     total cpu time spent up to now is       15.9 secs
+     total cpu time spent up to now is        9.1 secs
 
      total energy              =     -81.48233461 Ry
      estimated scf accuracy    <          1.8E-10 Ry
 
      iteration #  8     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  1.11E-12,  avg # of iterations =  6.7
+     ethr =  1.16E-12,  avg # of iterations =  6.4
 
-     total cpu time spent up to now is       17.8 secs
+     total cpu time spent up to now is       10.0 secs
 
      End of self-consistent calculation
 
@@ -678,56 +671,56 @@ Warning: card / ignored
      internal energy E=F+TS    =     -81.48233461 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =     -19.05378074 Ry
-     hartree contribution      =      14.09135820 Ry
-     xc contribution           =     -12.95303009 Ry
+     one-electron contribution =     -19.05378050 Ry
+     hartree contribution      =      14.09135787 Ry
+     xc contribution           =     -12.95303001 Ry
      ewald contribution        =     -63.56688198 Ry
 
      convergence has been achieved in   8 iterations
 
      Writing all to output data dir out/mp-2758.save/
  
-     init_run     :      0.48s CPU      0.51s WALL (       1 calls)
-     electrons    :     16.49s CPU     17.23s WALL (       1 calls)
+     init_run     :      0.31s CPU      0.36s WALL (       1 calls)
+     electrons    :      8.24s CPU      9.72s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      0.42s CPU      0.43s WALL (       1 calls)
-     potinit      :      0.02s CPU      0.03s WALL (       1 calls)
-     hinit0       :      0.01s CPU      0.03s WALL (       1 calls)
+     wfcinit      :      0.24s CPU      0.25s WALL (       1 calls)
+     potinit      :      0.03s CPU      0.03s WALL (       1 calls)
+     hinit0       :      0.02s CPU      0.05s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :     14.86s CPU     15.52s WALL (       8 calls)
-     sum_band     :      1.58s CPU      1.63s WALL (       8 calls)
-     v_of_rho     :      0.05s CPU      0.06s WALL (       9 calls)
-     mix_rho      :      0.01s CPU      0.01s WALL (       8 calls)
+     c_bands      :      7.55s CPU      8.87s WALL (       8 calls)
+     sum_band     :      0.67s CPU      0.70s WALL (       8 calls)
+     v_of_rho     :      0.03s CPU      0.03s WALL (       9 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       8 calls)
 
      Called by c_bands:
-     init_us_2    :      0.18s CPU      0.20s WALL (    1224 calls)
-     init_us_2:cp :      0.18s CPU      0.19s WALL (    1224 calls)
-     cegterg      :     14.07s CPU     14.46s WALL (     576 calls)
+     init_us_2    :      0.05s CPU      0.06s WALL (    1224 calls)
+     init_us_2:cp :      0.05s CPU      0.05s WALL (    1224 calls)
+     cegterg      :      7.29s CPU      7.52s WALL (     576 calls)
 
      Called by *egterg:
-     cdiaghg      :      1.32s CPU      1.37s WALL (    4310 calls)
-     h_psi        :     11.88s CPU     12.21s WALL (    4382 calls)
-     g_psi        :      0.09s CPU      0.09s WALL (    3734 calls)
+     cdiaghg      :      0.97s CPU      1.00s WALL (    4286 calls)
+     h_psi        :      6.12s CPU      6.30s WALL (    4358 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (    3710 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.36s CPU      0.37s WALL (    4382 calls)
-     vloc_psi     :     11.21s CPU     11.51s WALL (    4382 calls)
-     add_vuspsi   :      0.25s CPU      0.26s WALL (    4382 calls)
+     h_psi:calbec :      0.12s CPU      0.13s WALL (    4358 calls)
+     vloc_psi     :      5.90s CPU      6.08s WALL (    4358 calls)
+     add_vuspsi   :      0.07s CPU      0.07s WALL (    4358 calls)
 
      General routines
-     calbec       :      0.35s CPU      0.36s WALL (    4382 calls)
-     fft          :      0.03s CPU      0.04s WALL (      89 calls)
+     calbec       :      0.12s CPU      0.12s WALL (    4358 calls)
+     fft          :      0.02s CPU      0.05s WALL (      89 calls)
      ffts         :      0.00s CPU      0.00s WALL (       8 calls)
-     fftw         :     11.40s CPU     11.70s WALL (   88906 calls)
+     fftw         :      6.21s CPU      6.41s WALL (   88740 calls)
  
      Parallel routines
  
-     PWSCF        :     17.09s CPU     18.05s WALL
+     PWSCF        :      8.75s CPU     11.59s WALL
 
  
-   This run was terminated on:  14:29:40   3Jan2024            
+   This run was terminated on:  15:10:49   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

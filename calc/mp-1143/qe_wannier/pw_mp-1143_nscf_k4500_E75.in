@@ -3,7 +3,7 @@
   disk_io = 'low',
   outdir = 'out/',
   prefix = 'mp-1143',
-  pseudo_dir = '/usr/scratch4/magr4985/MG/devEb/pseudo/SG15',
+  pseudo_dir = '/usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15',
 /
 &SYSTEM
   celldm(1) = 9.784916074465148,

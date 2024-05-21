@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 14:27:17 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:10:35 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     122737 MiB available memory on the printing compute node when the environment starts
+     247689 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-1087_scf_k3000_E65.in
 Warning: card &CELL ignored
@@ -24,7 +24,7 @@ Warning: card / ignored
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
  
-     R & G space division:  proc/nbgrp/npool/nimage =       8
+     R & G space division:  proc/nbgrp/npool/nimage =      16
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -32,8 +32,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         144     144     43                 3305     3305     533
-     Max         145     145     44                 3310     3310     536
+     Min          72      72     21                 1652     1652     266
+     Max          73      73     22                 1657     1657     269
      Sum        1159    1159    349                26469    26469    4279
  
      Using Slab Decomposition
@@ -70,8 +70,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for S  read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/S.upf
-     MD5 check sum: f71d1a2a52b6d571906ac9250480b432
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/S.upf
+     MD5 check sum: f9d020296ee6110346977bfd66d424f6
      Pseudo is Norm-conserving, Zval =  6.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  4 beta functions with: 
@@ -81,8 +81,8 @@ Warning: card / ignored
                 l(4) =   1
 
      PseudoPot. # 2 for Sr read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Sr.upf
-     MD5 check sum: 7138e3241744793a1037e143c224f249
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Sr.upf
+     MD5 check sum: 3f9bc8d6f3e8472da0cbe0e6a3044a9f
      Pseudo is Norm-conserving, Zval = 10.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  6 beta functions with: 
@@ -184,16 +184,16 @@ Warning: card / ignored
 
      Dense  grid:    26469 G-vectors     FFT dimensions: (  45,  45,  45)
 
-     Estimated max dynamical RAM per process >      12.86 MB
+     Estimated max dynamical RAM per process >       7.75 MB
 
-     Estimated total dynamical RAM >     102.90 MB
+     Estimated total dynamical RAM >     124.02 MB
 
      Initial potential from superposition of free atoms
 
      starting charge      15.7089, renormalised to      16.0000
      Starting wfcs are random
 
-     total cpu time spent up to now is        0.6 secs
+     total cpu time spent up to now is        0.4 secs
 
      Self-consistent Calculation
 
@@ -207,26 +207,8 @@ Warning: card / ignored
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
@@ -237,11 +219,9 @@ Warning: card / ignored
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
@@ -255,73 +235,92 @@ Warning: card / ignored
      c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     ethr =  5.00E-06,  avg # of iterations = 19.7
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  5.00E-06,  avg # of iterations = 19.8
 
-     total cpu time spent up to now is        6.2 secs
+     total cpu time spent up to now is        3.5 secs
 
-     total energy              =     -83.00111039 Ry
-     estimated scf accuracy    <       0.10709658 Ry
+     total energy              =     -83.00110965 Ry
+     estimated scf accuracy    <       0.10709727 Ry
 
      iteration #  2     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
      ethr =  6.69E-04,  avg # of iterations =  3.5
 
-     total cpu time spent up to now is        7.7 secs
+     total cpu time spent up to now is        4.4 secs
 
-     total energy              =     -83.02846014 Ry
-     estimated scf accuracy    <       0.05048473 Ry
+     total energy              =     -83.02845850 Ry
+     estimated scf accuracy    <       0.05048959 Ry
 
      iteration #  3     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  3.16E-04,  avg # of iterations =  2.1
+     ethr =  3.16E-04,  avg # of iterations =  2.3
 
-     total cpu time spent up to now is        8.9 secs
+     total cpu time spent up to now is        5.2 secs
 
-     total energy              =     -83.03955840 Ry
-     estimated scf accuracy    <       0.00074806 Ry
+     total energy              =     -83.03955781 Ry
+     estimated scf accuracy    <       0.00074849 Ry
 
      iteration #  4     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  4.68E-06,  avg # of iterations =  5.8
+     ethr =  4.68E-06,  avg # of iterations =  6.1
 
-     total cpu time spent up to now is       10.5 secs
+     total cpu time spent up to now is        6.0 secs
 
-     total energy              =     -83.03964489 Ry
-     estimated scf accuracy    <       0.00000985 Ry
+     total energy              =     -83.03964493 Ry
+     estimated scf accuracy    <       0.00000975 Ry
 
      iteration #  5     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     c_bands:  1 eigenvalues not converged
-     ethr =  6.16E-08,  avg # of iterations =  8.2
+     ethr =  6.09E-08,  avg # of iterations =  7.7
 
-     total cpu time spent up to now is       12.4 secs
+     total cpu time spent up to now is        7.0 secs
 
      total energy              =     -83.03964770 Ry
      estimated scf accuracy    <       0.00000040 Ry
 
      iteration #  6     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  2.49E-09,  avg # of iterations =  5.8
+     ethr =  2.48E-09,  avg # of iterations =  5.8
 
-     total cpu time spent up to now is       14.1 secs
+     total cpu time spent up to now is        7.8 secs
 
      total energy              =     -83.03964786 Ry
      estimated scf accuracy    <       0.00000001 Ry
 
      iteration #  7     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  7.55E-11,  avg # of iterations =  6.1
+     ethr =  7.62E-11,  avg # of iterations =  5.6
 
-     total cpu time spent up to now is       15.8 secs
+     total cpu time spent up to now is        9.1 secs
 
      total energy              =     -83.03964786 Ry
-     estimated scf accuracy    <          9.0E-10 Ry
+     estimated scf accuracy    <          8.1E-10 Ry
 
      iteration #  8     ecut=    65.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.62E-12,  avg # of iterations =  5.5
+     ethr =  5.07E-12,  avg # of iterations =  5.8
 
-     total cpu time spent up to now is       17.4 secs
+     total cpu time spent up to now is       10.2 secs
 
      End of self-consistent calculation
 
@@ -342,7 +341,7 @@ Warning: card / ignored
 
           k =-0.2500 0.2500-0.2500 (  3317 PWs)   bands (ev):
 
-   -27.8163  -9.9608  -9.7783  -9.7783  -4.7307   4.1882   5.0666   5.0666
+   -27.8163  -9.9608  -9.7784  -9.7784  -4.7307   4.1882   5.0666   5.0666
     10.0691  11.0283  11.0283  11.3979  12.5064  12.5064  16.7783  18.0499
 
           k =-0.3333 0.3333-0.3333 (  3305 PWs)   bands (ev):
@@ -367,7 +366,7 @@ Warning: card / ignored
 
           k =-0.0833 0.2500-0.0833 (  3309 PWs)   bands (ev):
 
-   -27.8208  -9.8472  -9.7802  -9.7758  -4.9424   4.8066   5.4175   5.4615
+   -27.8209  -9.8472  -9.7802  -9.7758  -4.9424   4.8066   5.4175   5.4615
      9.7794  10.0256  10.7129  10.7133  11.3049  12.0803  16.4285  18.7636
 
           k =-0.1667 0.3333-0.1667 (  3321 PWs)   bands (ev):
@@ -377,7 +376,7 @@ Warning: card / ignored
 
           k =-0.2500 0.4167-0.2500 (  3316 PWs)   bands (ev):
 
-   -27.8127 -10.0175  -9.7927  -9.7861  -4.6026   3.8172   4.8491   4.9770
+   -27.8128 -10.0175  -9.7927  -9.7861  -4.6026   3.8172   4.8491   4.9770
     10.0588  11.3374  11.8099  11.9177  12.6977  13.6790  16.2413  16.8952
 
           k =-0.3333 0.5000-0.3333 (  3300 PWs)   bands (ev):
@@ -418,7 +417,7 @@ Warning: card / ignored
           k = 0.0000 0.3333 0.0000 (  3315 PWs)   bands (ev):
 
    -27.8192  -9.8595  -9.7900  -9.7900  -4.8954   4.5276   5.4572   5.4572
-     9.4362  10.0882  11.0916  11.0916  11.2221  12.7586  16.8284  18.5579
+     9.4362  10.0882  11.0916  11.0916  11.2221  12.7586  16.8285  18.5579
 
           k =-0.0833 0.4167-0.0833 (  3309 PWs)   bands (ev):
 
@@ -442,7 +441,7 @@ Warning: card / ignored
 
           k = 0.5833-0.2500 0.5833 (  3295 PWs)   bands (ev):
 
-   -27.8062 -10.0869  -9.8395  -9.7993  -4.4291   3.4714   4.6010   4.6652
+   -27.8062 -10.0869  -9.8395  -9.7994  -4.4291   3.4714   4.6010   4.6652
     10.8851  11.5660  12.4780  13.0198  13.8697  14.7490  15.4062  15.7984
 
           k = 0.5000-0.1667 0.5000 (  3300 PWs)   bands (ev):
@@ -472,7 +471,7 @@ Warning: card / ignored
 
           k =-0.1667 0.6667-0.1667 (  3305 PWs)   bands (ev):
 
-   -27.8074 -10.0041  -9.8414  -9.8265  -4.6324   3.9003   4.8592   5.0620
+   -27.8074 -10.0041  -9.8414  -9.8266  -4.6324   3.9003   4.8592   5.0620
      9.1091  11.7199  12.3330  12.9505  13.0807  14.2023  15.1508  16.5739
 
           k = 0.7500-0.2500 0.7500 (  3295 PWs)   bands (ev):
@@ -532,7 +531,7 @@ Warning: card / ignored
 
           k = 0.8333 0.0000 0.8333 (  3292 PWs)   bands (ev):
 
-   -27.8026  -9.9790  -9.9061  -9.8463  -4.6896   4.3058   4.6877   5.0341
+   -27.8026  -9.9791  -9.9061  -9.8463  -4.6896   4.3058   4.6877   5.0341
      8.8029  12.4498  12.6698  12.9379  13.1434  13.4460  15.4463  17.7901
 
           k = 0.0000-1.0000 0.0000 (  3306 PWs)   bands (ev):
@@ -567,7 +566,7 @@ Warning: card / ignored
 
           k =-0.1667 0.5000 0.0000 (  3307 PWs)   bands (ev):
 
-   -27.8128  -9.9535  -9.8204  -9.8004  -4.7133   4.0035   5.1141   5.2210
+   -27.8128  -9.9535  -9.8205  -9.8004  -4.7133   4.0035   5.1141   5.2210
      9.2364  10.8482  11.7803  11.9650  12.3020  14.1764  16.2957  17.2980
 
           k =-0.2500 0.5833-0.0833 (  3303 PWs)   bands (ev):
@@ -652,7 +651,7 @@ Warning: card / ignored
 
           k = 0.5833-0.2500 0.9167 (  3299 PWs)   bands (ev):
 
-   -27.8045 -10.0121  -9.8874  -9.8318  -4.5482   3.8988   4.6265   4.7334
+   -27.8046 -10.0121  -9.8874  -9.8318  -4.5482   3.8988   4.6265   4.7334
     10.1355  11.4614  12.3063  13.1700  13.5837  14.5434  15.4275  16.4360
 
           k = 0.5000-0.1667 0.8333 (  3308 PWs)   bands (ev):
@@ -678,7 +677,7 @@ Warning: card / ignored
           k =-0.3333-1.0000 0.0000 (  3306 PWs)   bands (ev):
 
    -27.8025  -9.9628  -9.8931  -9.8879  -4.6442   4.3689   4.5644   4.7839
-     9.3926  11.8913  12.1721  12.9748  13.7724  13.9564  15.8678  17.4507
+     9.3926  11.8913  12.1721  12.9748  13.7724  13.9564  15.8679  17.4507
 
           k =-0.5000-1.0000 0.0000 (  3268 PWs)   bands (ev):
 
@@ -688,61 +687,61 @@ Warning: card / ignored
      the Fermi energy is     6.9905 ev
 
 !    total energy              =     -83.03964786 Ry
-     estimated scf accuracy    <          5.4E-11 Ry
+     estimated scf accuracy    <          5.0E-11 Ry
      smearing contrib. (-TS)   =      -0.00000000 Ry
      internal energy E=F+TS    =     -83.03964786 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =     -17.61372460 Ry
-     hartree contribution      =      13.90711320 Ry
-     xc contribution           =     -13.33418533 Ry
+     one-electron contribution =     -17.61372573 Ry
+     hartree contribution      =      13.90711471 Ry
+     xc contribution           =     -13.33418569 Ry
      ewald contribution        =     -65.99885114 Ry
 
      convergence has been achieved in   8 iterations
 
      Writing all to output data dir out/mp-1087.save/
  
-     init_run     :      0.47s CPU      0.51s WALL (       1 calls)
-     electrons    :     16.35s CPU     16.88s WALL (       1 calls)
+     init_run     :      0.31s CPU      0.34s WALL (       1 calls)
+     electrons    :      8.22s CPU      9.77s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :      0.43s CPU      0.45s WALL (       1 calls)
-     potinit      :      0.02s CPU      0.02s WALL (       1 calls)
+     wfcinit      :      0.27s CPU      0.28s WALL (       1 calls)
+     potinit      :      0.01s CPU      0.01s WALL (       1 calls)
      hinit0       :      0.01s CPU      0.02s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :     14.78s CPU     15.26s WALL (       8 calls)
-     sum_band     :      1.52s CPU      1.56s WALL (       8 calls)
-     v_of_rho     :      0.05s CPU      0.05s WALL (       9 calls)
-     mix_rho      :      0.01s CPU      0.01s WALL (       8 calls)
+     c_bands      :      7.48s CPU      8.95s WALL (       8 calls)
+     sum_band     :      0.72s CPU      0.75s WALL (       8 calls)
+     v_of_rho     :      0.02s CPU      0.02s WALL (       9 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       8 calls)
 
      Called by c_bands:
-     init_us_2    :      0.14s CPU      0.15s WALL (    1224 calls)
-     init_us_2:cp :      0.14s CPU      0.15s WALL (    1224 calls)
-     cegterg      :     14.33s CPU     14.75s WALL (     576 calls)
+     init_us_2    :      0.04s CPU      0.05s WALL (    1224 calls)
+     init_us_2:cp :      0.04s CPU      0.05s WALL (    1224 calls)
+     cegterg      :      7.33s CPU      7.63s WALL (     576 calls)
 
      Called by *egterg:
-     cdiaghg      :      1.41s CPU      1.46s WALL (    4657 calls)
-     h_psi        :     12.12s CPU     12.48s WALL (    4729 calls)
-     g_psi        :      0.08s CPU      0.09s WALL (    4081 calls)
+     cdiaghg      :      1.03s CPU      1.08s WALL (    4638 calls)
+     h_psi        :      6.13s CPU      6.36s WALL (    4710 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (    4062 calls)
 
      Called by h_psi:
-     h_psi:calbec :      0.29s CPU      0.30s WALL (    4729 calls)
-     vloc_psi     :     11.60s CPU     11.93s WALL (    4729 calls)
-     add_vuspsi   :      0.18s CPU      0.19s WALL (    4729 calls)
+     h_psi:calbec :      0.10s CPU      0.13s WALL (    4710 calls)
+     vloc_psi     :      5.95s CPU      6.16s WALL (    4710 calls)
+     add_vuspsi   :      0.05s CPU      0.05s WALL (    4710 calls)
 
      General routines
-     calbec       :      0.27s CPU      0.29s WALL (    4729 calls)
-     fft          :      0.02s CPU      0.03s WALL (      89 calls)
+     calbec       :      0.09s CPU      0.12s WALL (    4710 calls)
+     fft          :      0.01s CPU      0.02s WALL (      89 calls)
      ffts         :      0.00s CPU      0.00s WALL (       8 calls)
-     fftw         :     11.73s CPU     12.06s WALL (   93064 calls)
+     fftw         :      6.29s CPU      6.51s WALL (   93146 calls)
  
      Parallel routines
  
-     PWSCF        :     16.93s CPU     17.75s WALL
+     PWSCF        :      8.69s CPU     11.14s WALL
 
  
-   This run was terminated on:  14:27:35   3Jan2024            
+   This run was terminated on:  15:10:46   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

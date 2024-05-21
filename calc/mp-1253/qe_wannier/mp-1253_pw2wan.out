@@ -1,5 +1,5 @@
 
-     Program PW2WANNIER v.7.1 starts on  3Jan2024 at 14:35:18 
+     Program PW2WANNIER v.7.1 starts on  8Apr2024 at 15:15:28 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,11 +10,11 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     R & G space division:  proc/nbgrp/npool/nimage =       8
-     120385 MiB available memory on the printing compute node when the environment starts
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     245126 MiB available memory on the printing compute node when the environment starts
  
  
   Reading nscf_save data
@@ -33,8 +33,8 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         177     177     54                 4444     4444     771
-     Max         178     178     55                 4448     4448     775
+     Min          88      88     27                 2220     2220     385
+     Max          89      89     28                 2224     2224     390
      Sum        1417    1417    439                35557    35557    6183
  
      Using Slab Decomposition
@@ -460,14 +460,14 @@
   ------------
  
  
-     init_pw2wan  :      3.41s CPU      5.95s WALL (       1 calls)
-     compute_amn  :      0.54s CPU      0.82s WALL (       1 calls)
-     compute_mmn  :      3.27s CPU      6.79s WALL (       1 calls)
+     init_pw2wan  :      4.82s CPU      9.23s WALL (       1 calls)
+     compute_amn  :      0.51s CPU      1.00s WALL (       1 calls)
+     compute_mmn  :      5.09s CPU      7.85s WALL (       1 calls)
  
-     PW2WANNIER   :      7.24s CPU     13.59s WALL
+     PW2WANNIER   :     10.43s CPU     18.16s WALL
 
  
-   This run was terminated on:  14:35:31   3Jan2024            
+   This run was terminated on:  15:15:46   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

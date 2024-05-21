@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 15:15:26 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:25: 2 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     123661 MiB available memory on the printing compute node when the environment starts
+     247681 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-23291_scf_k3000_E65.in
 Warning: card &CELL ignored
@@ -24,7 +24,7 @@ Warning: card / ignored
      Max number of k-points (npk) =  40000
      Max angular momentum in pseudopotentials (lmaxx) =  4
  
-     R & G space division:  proc/nbgrp/npool/nimage =       8
+     R & G space division:  proc/nbgrp/npool/nimage =      16
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -32,8 +32,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         322     322     90                19102    19102    2830
-     Max         323     323     91                19107    19107    2834
+     Min         161     161     45                 9551     9551    1413
+     Max         162     162     46                 9556     9556    1419
      Sum        2579    2579    721               152827   152827   22651
  
      Using Slab Decomposition
@@ -70,8 +70,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Cl read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Cl.upf
-     MD5 check sum: d09d09b0a9f35bc416b5a5b3d9ab34ee
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Cl.upf
+     MD5 check sum: 0f993535b366f580ecbcdacce103c843
      Pseudo is Norm-conserving, Zval =  7.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  4 beta functions with: 
@@ -81,8 +81,8 @@ Warning: card / ignored
                 l(4) =   1
 
      PseudoPot. # 2 for Pb read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Pb.upf
-     MD5 check sum: 18da7c9819a8d2a15024df9e07e1e14a
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Pb.upf
+     MD5 check sum: 7f27c247474026287e0dbe0f3167d60b
      Pseudo is Norm-conserving, Zval = 14.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  8 beta functions with: 
@@ -196,16 +196,16 @@ Warning: card / ignored
 
      Dense  grid:   152827 G-vectors     FFT dimensions: (  48,  80,  90)
 
-     Estimated max dynamical RAM per process >     331.27 MB
+     Estimated max dynamical RAM per process >     168.89 MB
 
-     Estimated total dynamical RAM >       2.59 GB
+     Estimated total dynamical RAM >       2.64 GB
 
      Initial potential from superposition of free atoms
 
      starting charge     111.5543, renormalised to     112.0000
      Starting wfcs are random
 
-     total cpu time spent up to now is       13.0 secs
+     total cpu time spent up to now is        4.0 secs
 
      Self-consistent Calculation
 
@@ -213,43 +213,43 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  5.00E-06,  avg # of iterations = 22.7
 
-     total cpu time spent up to now is      353.2 secs
+     total cpu time spent up to now is       89.0 secs
 
-     total energy              =    -693.87875511 Ry
-     estimated scf accuracy    <       0.61393647 Ry
+     total energy              =    -693.87875534 Ry
+     estimated scf accuracy    <       0.61393609 Ry
 
      iteration #  2     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  5.48E-04,  avg # of iterations =  6.6
 
-     total cpu time spent up to now is      467.7 secs
+     total cpu time spent up to now is      117.3 secs
 
-     total energy              =    -694.04022535 Ry
-     estimated scf accuracy    <       0.30331641 Ry
+     total energy              =    -694.04022526 Ry
+     estimated scf accuracy    <       0.30331651 Ry
 
      iteration #  3     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  2.71E-04,  avg # of iterations =  5.7
 
-     total cpu time spent up to now is      569.2 secs
+     total cpu time spent up to now is      142.4 secs
 
-     total energy              =    -694.10961523 Ry
-     estimated scf accuracy    <       0.00445695 Ry
+     total energy              =    -694.10961525 Ry
+     estimated scf accuracy    <       0.00445697 Ry
 
      iteration #  4     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  3.98E-06,  avg # of iterations =  5.9
 
-     total cpu time spent up to now is      675.1 secs
+     total cpu time spent up to now is      168.5 secs
 
-     total energy              =    -694.11028690 Ry
-     estimated scf accuracy    <       0.00160817 Ry
+     total energy              =    -694.11028692 Ry
+     estimated scf accuracy    <       0.00160807 Ry
 
      iteration #  5     ecut=    65.00 Ry     beta= 0.70
      ParO style diagonalization
      ethr =  1.44E-06,  avg # of iterations =  6.1
 
-     total cpu time spent up to now is      780.7 secs
+     total cpu time spent up to now is      195.0 secs
 
      total energy              =    -694.11064005 Ry
      estimated scf accuracy    <       0.00013220 Ry
@@ -258,7 +258,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  1.18E-07,  avg # of iterations =  6.0
 
-     total cpu time spent up to now is      884.2 secs
+     total cpu time spent up to now is      220.7 secs
 
      total energy              =    -694.11066562 Ry
      estimated scf accuracy    <       0.00000654 Ry
@@ -267,7 +267,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  5.84E-09,  avg # of iterations =  6.7
 
-     total cpu time spent up to now is     1001.0 secs
+     total cpu time spent up to now is      249.4 secs
 
      total energy              =    -694.11066712 Ry
      estimated scf accuracy    <       0.00000184 Ry
@@ -276,7 +276,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  1.64E-09,  avg # of iterations =  5.7
 
-     total cpu time spent up to now is     1102.5 secs
+     total cpu time spent up to now is      274.5 secs
 
      total energy              =    -694.11066745 Ry
      estimated scf accuracy    <       0.00000019 Ry
@@ -285,7 +285,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  1.68E-10,  avg # of iterations =  5.5
 
-     total cpu time spent up to now is     1200.7 secs
+     total cpu time spent up to now is      298.8 secs
 
      total energy              =    -694.11066748 Ry
      estimated scf accuracy    <       0.00000001 Ry
@@ -294,7 +294,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  8.95E-12,  avg # of iterations =  6.2
 
-     total cpu time spent up to now is     1308.4 secs
+     total cpu time spent up to now is      325.4 secs
 
      total energy              =    -694.11066748 Ry
      estimated scf accuracy    <          9.7E-10 Ry
@@ -303,7 +303,7 @@ Warning: card / ignored
      ParO style diagonalization
      ethr =  8.68E-13,  avg # of iterations =  6.0
 
-     total cpu time spent up to now is     1416.1 secs
+     total cpu time spent up to now is      352.2 secs
 
      End of self-consistent calculation
 
@@ -405,7 +405,7 @@ Warning: card / ignored
     10.3898  10.3899  10.5009  10.5009  13.3710  13.3710  14.2108  14.2108
     14.7589  14.7589  14.8652  14.8652  15.4288  15.4288  15.8197  15.8197
     16.0721  16.0721  16.1533  16.1533  17.1333  17.1333  17.2249  17.2249
-    17.7502  17.7502  17.8558  17.8558  18.3384  18.3384  18.4934  18.4934
+    17.7502  17.7502  17.8558  17.8558  18.3384  18.3384  18.4933  18.4934
     19.3128  19.3128  19.9932  19.9932  20.1529  20.1529  20.2505  20.2505
     20.9962  20.9962  21.0680  21.0680  21.5037  21.5037  22.1553  22.1553
 
@@ -548,7 +548,7 @@ Warning: card / ignored
           k = 0.1000 0.0000-0.2480 ( 19130 PWs)   bands (ev):
 
    -10.5180 -10.5179 -10.4747 -10.4747 -10.4648 -10.4648 -10.4352 -10.4352
-   -10.4323 -10.4323 -10.4311 -10.4310 -10.4261 -10.4260 -10.4199 -10.4198
+   -10.4323 -10.4323 -10.4311 -10.4311 -10.4261 -10.4260 -10.4198 -10.4198
    -10.4193 -10.4193 -10.4122 -10.4122  -8.8232  -8.8232  -8.2283  -8.2283
     -8.1351  -8.1351  -7.9116  -7.9116  -1.8252  -1.8252  -0.9468  -0.9468
      2.0832   2.0832   2.3857   2.3857   2.7004   2.7004   2.9900   2.9900
@@ -751,7 +751,7 @@ Warning: card / ignored
 
           k = 0.2000 0.0000-0.2480 ( 19134 PWs)   bands (ev):
 
-   -10.5080 -10.5080 -10.4885 -10.4885 -10.4805 -10.4804 -10.4406 -10.4406
+   -10.5080 -10.5080 -10.4885 -10.4885 -10.4804 -10.4804 -10.4406 -10.4406
    -10.4302 -10.4302 -10.4288 -10.4288 -10.4248 -10.4248 -10.4203 -10.4203
    -10.4180 -10.4180 -10.4140 -10.4140  -8.7440  -8.7439  -8.1894  -8.1894
     -8.1086  -8.1086  -7.9524  -7.9524  -1.8488  -1.8488  -1.0902  -1.0902
@@ -1062,13 +1062,13 @@ Warning: card / ignored
    -10.4152 -10.4152 -10.4143 -10.4143  -8.5393  -8.5392  -8.3330  -8.3329
     -8.0176  -8.0176  -7.9836  -7.9836  -1.7287  -1.7287  -1.4495  -1.4495
      1.9110   1.9110   2.1709   2.1709   2.5268   2.5268   2.8684   2.8684
-     3.0577   3.0577   3.6765   3.6766   3.8439   3.8439   4.0303   4.0303
+     3.0577   3.0577   3.6765   3.6765   3.8439   3.8439   4.0303   4.0303
      4.1064   4.1064   4.2677   4.2677   4.4184   4.4184   4.7110   4.7110
      9.1072   9.1072   9.5292   9.5292   9.9533   9.9533  10.1659  10.1659
     10.3582  10.3582  10.5515  10.5515  14.0312  14.0312  14.2882  14.2882
     14.6060  14.6061  14.7773  14.7773  15.4424  15.4424  15.7338  15.7338
     16.4624  16.4625  17.0722  17.0722  17.1766  17.1766  17.5857  17.5857
-    17.8671  17.8671  18.3431  18.3431  18.7358  18.7358  19.0665  19.0665
+    17.8671  17.8671  18.3430  18.3431  18.7358  18.7358  19.0665  19.0665
     19.3485  19.3485  19.9302  19.9302  20.3221  20.3221  20.5283  20.5283
     20.9631  20.9631  21.2986  21.2986  21.5491  21.5491  21.7521  21.7521
 
@@ -1215,7 +1215,7 @@ Warning: card / ignored
    -10.4131 -10.4131 -10.4119 -10.4119  -8.4607  -8.4607  -8.2160  -8.2160
     -8.0651  -8.0651  -8.0238  -8.0238  -1.8029  -1.8029  -1.5274  -1.5274
      1.8979   1.8979   2.0068   2.0068   2.2490   2.2491   2.6670   2.6670
-     3.1831   3.1831   3.6760   3.6761   3.7725   3.7725   4.0866   4.0866
+     3.1831   3.1831   3.6760   3.6761   3.7724   3.7725   4.0866   4.0866
      4.1295   4.1295   4.3286   4.3286   4.6419   4.6419   4.7353   4.7353
      9.1018   9.1018   9.6141   9.6141  10.1211  10.1211  10.3122  10.3122
     10.5406  10.5406  10.6415  10.6415  13.9926  13.9926  14.2133  14.2133
@@ -1288,7 +1288,7 @@ Warning: card / ignored
      8.9938   8.9938   9.5795   9.5795   9.9673   9.9673  10.2693  10.2693
     10.8463  10.8463  10.9360  10.9360  14.4542  14.4542  14.5139  14.5140
     14.6482  14.6482  14.8420  14.8420  15.3831  15.3831  15.4578  15.4578
-    16.6689  16.6690  16.7864  16.7864  17.2480  17.2480  17.3819  17.3819
+    16.6690  16.6690  16.7864  16.7864  17.2480  17.2480  17.3819  17.3819
     18.2141  18.2141  18.4000  18.4000  18.5818  18.5818  19.3740  19.3740
     19.6557  19.6557  19.9502  19.9503  20.1029  20.1029  20.5443  20.5443
     20.6855  20.6855  20.9930  20.9930  21.5278  21.5278  21.6269  21.6269
@@ -1352,7 +1352,7 @@ Warning: card / ignored
     -8.0431  -8.0431  -8.0367  -8.0367  -1.7411  -1.7411  -1.6520  -1.6520
      1.7139   1.7139   1.8932   1.8932   2.4350   2.4350   2.7658   2.7658
      3.0387   3.0387   3.6457   3.6457   3.8443   3.8443   3.9365   3.9365
-     4.2322   4.2322   4.3601   4.3601   4.6223   4.6223   4.8040   4.8040
+     4.2321   4.2322   4.3601   4.3601   4.6223   4.6223   4.8040   4.8040
      9.2954   9.2954   9.5107   9.5107  10.0476  10.0476  10.1809  10.1809
     10.6167  10.6167  10.9899  10.9899  13.9090  13.9090  14.1605  14.1605
     14.9256  14.9256  15.1525  15.1525  15.2851  15.2851  15.7277  15.7277
@@ -1381,7 +1381,7 @@ Warning: card / ignored
           k =-0.5000 0.0988 0.0000 ( 19128 PWs)   bands (ev):
 
    -10.5274 -10.5274 -10.5207 -10.5207 -10.4736 -10.4736 -10.4606 -10.4606
-   -10.4284 -10.4283 -10.4273 -10.4272 -10.4211 -10.4211 -10.4196 -10.4196
+   -10.4284 -10.4283 -10.4273 -10.4273 -10.4211 -10.4211 -10.4196 -10.4196
    -10.4135 -10.4135 -10.4114 -10.4114  -8.3748  -8.3748  -8.2541  -8.2541
     -8.0507  -8.0507  -8.0447  -8.0447  -1.7201  -1.7201  -1.6975  -1.6975
      1.6895   1.6895   1.9684   1.9684   2.6946   2.6946   2.7037   2.7037
@@ -1419,7 +1419,7 @@ Warning: card / ignored
    -10.4115 -10.4115 -10.4107 -10.4107  -8.3358  -8.3358  -8.3008  -8.3008
     -8.0489  -8.0489  -8.0409  -8.0409  -1.7513  -1.7513  -1.6452  -1.6452
      1.8697   1.8697   1.9313   1.9313   2.3000   2.3000   2.5871   2.5871
-     3.3051   3.3051   3.5217   3.5217   3.7928   3.7928   4.0407   4.0407
+     3.3051   3.3051   3.5217   3.5217   3.7927   3.7928   4.0407   4.0407
      4.1519   4.1519   4.3604   4.3604   4.6791   4.6791   4.7289   4.7289
      9.2098   9.2098   9.4600   9.4600  10.1992  10.1992  10.3846  10.3846
     10.6316  10.6316  10.6881  10.6881  14.0722  14.0722  14.1254  14.1254
@@ -1467,7 +1467,7 @@ Warning: card / ignored
 
    -10.5255 -10.5255 -10.5228 -10.5228 -10.4679 -10.4679 -10.4661 -10.4661
    -10.4293 -10.4293 -10.4270 -10.4270 -10.4230 -10.4230 -10.4198 -10.4198
-   -10.4110 -10.4110 -10.4104 -10.4103  -8.3152  -8.3152  -8.2936  -8.2936
+   -10.4110 -10.4110 -10.4104 -10.4104  -8.3152  -8.3152  -8.2936  -8.2936
     -8.0635  -8.0635  -8.0574  -8.0574  -1.7422  -1.7422  -1.6827  -1.6827
      1.9759   1.9759   2.0395   2.0395   2.4850   2.4850   2.5423   2.5423
      3.2651   3.2651   3.2853   3.2853   3.8907   3.8907   3.9245   3.9245
@@ -1499,7 +1499,7 @@ Warning: card / ignored
 
           k =-0.5000-0.2964 0.1240 ( 19128 PWs)   bands (ev):
 
-   -10.5231 -10.5231 -10.5231 -10.5231 -10.4662 -10.4662 -10.4662 -10.4662
+   -10.5231 -10.5231 -10.5231 -10.5231 -10.4662 -10.4662 -10.4662 -10.4661
    -10.4283 -10.4283 -10.4283 -10.4283 -10.4229 -10.4229 -10.4229 -10.4229
    -10.4111 -10.4111 -10.4111 -10.4111  -8.2988  -8.2988  -8.2987  -8.2987
     -8.0664  -8.0664  -8.0664  -8.0664  -1.7240  -1.7240  -1.7240  -1.7240
@@ -1507,7 +1507,7 @@ Warning: card / ignored
      3.1023   3.1023   3.1023   3.1023   3.8547   3.8547   3.8547   3.8547
      4.1859   4.1860   4.1860   4.1860   4.6051   4.6051   4.6051   4.6051
      9.3029   9.3029   9.3029   9.3029  10.2034  10.2034  10.2034  10.2034
-    10.8775  10.8775  10.8775  10.8775  14.5717  14.5717  14.5717  14.5717
+    10.8775  10.8775  10.8775  10.8775  14.5716  14.5717  14.5717  14.5717
     14.8325  14.8325  14.8325  14.8325  15.3837  15.3837  15.3838  15.3838
     16.9113  16.9113  16.9113  16.9114  17.2763  17.2763  17.2763  17.2763
     18.1466  18.1466  18.1466  18.1466  18.7107  18.7107  18.7107  18.7107
@@ -1548,46 +1548,46 @@ Warning: card / ignored
 
      Writing all to output data dir out/mp-23291.save/
  
-     init_run     :     12.66s CPU     12.96s WALL (       1 calls)
-     electrons    :   1387.95s CPU   1403.05s WALL (       1 calls)
+     init_run     :      3.83s CPU      3.95s WALL (       1 calls)
+     electrons    :    342.25s CPU    348.23s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :     12.08s CPU     12.34s WALL (       1 calls)
-     potinit      :      0.14s CPU      0.15s WALL (       1 calls)
-     hinit0       :      0.10s CPU      0.11s WALL (       1 calls)
+     wfcinit      :      3.52s CPU      3.63s WALL (       1 calls)
+     potinit      :      0.10s CPU      0.10s WALL (       1 calls)
+     hinit0       :      0.06s CPU      0.07s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :   1342.64s CPU   1356.99s WALL (      11 calls)
-     sum_band     :     45.03s CPU     45.76s WALL (      11 calls)
-     v_of_rho     :      0.23s CPU      0.24s WALL (      12 calls)
-     mix_rho      :      0.05s CPU      0.06s WALL (      11 calls)
+     c_bands      :    330.98s CPU    336.73s WALL (      11 calls)
+     sum_band     :     11.18s CPU     11.37s WALL (      11 calls)
+     v_of_rho     :      0.07s CPU      0.08s WALL (      12 calls)
+     mix_rho      :      0.01s CPU      0.02s WALL (      11 calls)
 
      Called by c_bands:
-     init_us_2    :      3.84s CPU      3.87s WALL (    1656 calls)
-     init_us_2:cp :      3.83s CPU      3.87s WALL (    1656 calls)
-     paro_k       :   1304.57s CPU   1318.29s WALL (     792 calls)
+     init_us_2    :      0.89s CPU      0.92s WALL (    1656 calls)
+     init_us_2:cp :      0.89s CPU      0.92s WALL (    1656 calls)
+     paro_k       :    320.63s CPU    325.04s WALL (     792 calls)
 
      Called by paro_*:
-     h_psi        :    728.06s CPU    736.38s WALL (   18289 calls)
-     g_psi        :     11.44s CPU     12.15s WALL (  756725 calls)
+     h_psi        :    182.75s CPU    185.40s WALL (   18292 calls)
+     g_psi        :      2.18s CPU      2.31s WALL (  756769 calls)
 
      Called by h_psi:
-     h_psi:calbec :     82.22s CPU     82.78s WALL (   18289 calls)
-     vloc_psi     :    555.10s CPU    562.66s WALL (   18289 calls)
-     add_vuspsi   :     86.56s CPU     86.68s WALL (   18289 calls)
+     h_psi:calbec :     19.01s CPU     19.23s WALL (   18292 calls)
+     vloc_psi     :    144.24s CPU    146.55s WALL (   18292 calls)
+     add_vuspsi   :     18.30s CPU     18.37s WALL (   18292 calls)
 
      General routines
-     calbec       :     82.15s CPU     82.73s WALL (   18289 calls)
-     fft          :      0.09s CPU      0.10s WALL (     119 calls)
-     ffts         :      0.01s CPU      0.01s WALL (      11 calls)
-     fftw         :    517.54s CPU    524.66s WALL ( 1390222 calls)
+     calbec       :     18.98s CPU     19.20s WALL (   18292 calls)
+     fft          :      0.03s CPU      0.03s WALL (     119 calls)
+     ffts         :      0.00s CPU      0.00s WALL (      11 calls)
+     fftw         :    139.37s CPU    141.57s WALL ( 1390328 calls)
  
      Parallel routines
  
-     PWSCF        :  23m22.46s CPU  23m39.82s WALL
+     PWSCF        :   5m48.64s CPU   5m58.74s WALL
 
  
-   This run was terminated on:  15:39: 5   3Jan2024            
+   This run was terminated on:  15:31: 1   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

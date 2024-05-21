@@ -1,1 +1,2 @@
 qe_convergence_SG15.py     2718.51 s  8 cores
+qe_convergence_SG15.py     1781.06 s  16 cores

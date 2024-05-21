@@ -1,0 +1,15 @@
+PREC     = Accurate 
+ENCUT    = 520 
+ALGO     = Normal 
+ISMEAR   = 0 
+SIGMA    = 0.01 
+EDIFF    = 1E-8 
+NELM     = 100 
+LREAL    = .FALSE. 
+NPAR     = 16 
+KPAR     = 1 
+LEPSILON = .TRUE. 
+LPEAD    = .TRUE.
+IBRION   = 8 
+LWAVE    = .FALSE. 
+SYMPREC  = 1E-8 

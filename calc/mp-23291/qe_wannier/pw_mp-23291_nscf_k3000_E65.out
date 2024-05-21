@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.1 starts on  3Jan2024 at 15:39:23 
+     Program PWSCF v.7.1 starts on  8Apr2024 at 15:31:10 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,10 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on    16 processors
 
      MPI processes distributed on     1 nodes
-     123472 MiB available memory on the printing compute node when the environment starts
+     247667 MiB available memory on the printing compute node when the environment starts
  
      Reading input from pw_mp-23291_nscf_k3000_E65.in
 Warning: card &IONS ignored
@@ -31,7 +31,7 @@ Warning: card / ignored
      Atomic positions from file used, from input discarded
  
  
-     R & G space division:  proc/nbgrp/npool/nimage =       8
+     R & G space division:  proc/nbgrp/npool/nimage =      16
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -39,8 +39,8 @@ Warning: card / ignored
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         322     322     97                19102    19102    3163
-     Max         323     323     98                19107    19107    3168
+     Min         161     161     48                 9551     9551    1580
+     Max         162     162     49                 9556     9556    1585
      Sum        2579    2579    777               152827   152827   25321
  
      Using Slab Decomposition
@@ -74,8 +74,8 @@ Warning: card / ignored
 
 
      PseudoPot. # 1 for Cl read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Cl.upf
-     MD5 check sum: d09d09b0a9f35bc416b5a5b3d9ab34ee
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Cl.upf
+     MD5 check sum: 0f993535b366f580ecbcdacce103c843
      Pseudo is Norm-conserving, Zval =  7.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  4 beta functions with: 
@@ -85,8 +85,8 @@ Warning: card / ignored
                 l(4) =   1
 
      PseudoPot. # 2 for Pb read from file:
-     /usr/scratch4/magr4985/MG/devEb/pseudo/SG15/Pb.upf
-     MD5 check sum: 18da7c9819a8d2a15024df9e07e1e14a
+     /usr/scratch4/magr4826/Promotion/Python/Code/devEb/pseudo/SG15/Pb.upf
+     MD5 check sum: 7f27c247474026287e0dbe0f3167d60b
      Pseudo is Norm-conserving, Zval = 14.0
      Generated using ONCVPSP code by D. R. Hamann
      Using radial grid of  602 points,  8 beta functions with: 
@@ -129,9 +129,9 @@ Warning: card / ignored
 
      Dense  grid:   152827 G-vectors     FFT dimensions: (  45,  75,  90)
 
-     Estimated max dynamical RAM per process >    1021.74 MB
+     Estimated max dynamical RAM per process >     515.29 MB
 
-     Estimated total dynamical RAM >       7.98 GB
+     Estimated total dynamical RAM >       8.05 GB
 
      The potential is recalculated from file :
      out/mp-23291.save/charge-density
@@ -141,9 +141,9 @@ Warning: card / ignored
      Band Structure Calculation
      Davidson diagonalization with overlap
 
-     ethr =  5.00E-06,  avg # of iterations = 33.0
+     ethr =  5.00E-06,  avg # of iterations = 32.9
 
-     total cpu time spent up to now is      909.1 secs
+     total cpu time spent up to now is      276.9 secs
 
      End of band structure calculation
 
@@ -154,44 +154,44 @@ Warning: card / ignored
 
      Writing all to output data dir out/mp-23291.save/
  
-     init_run     :      0.21s CPU      0.24s WALL (       1 calls)
-     electrons    :    896.92s CPU    908.48s WALL (       1 calls)
+     init_run     :      0.19s CPU      0.24s WALL (       1 calls)
+     electrons    :    271.58s CPU    276.06s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     potinit      :      0.03s CPU      0.04s WALL (       1 calls)
-     hinit0       :      0.08s CPU      0.09s WALL (       1 calls)
+     potinit      :      0.03s CPU      0.06s WALL (       1 calls)
+     hinit0       :      0.11s CPU      0.12s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    896.92s CPU    908.47s WALL (       1 calls)
-     v_of_rho     :      0.03s CPU      0.03s WALL (       1 calls)
+     c_bands      :    271.58s CPU    276.06s WALL (       1 calls)
+     v_of_rho     :      0.02s CPU      0.02s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :      0.50s CPU      0.53s WALL (     240 calls)
-     init_us_2:cp :      0.50s CPU      0.53s WALL (     240 calls)
-     cegterg      :    848.00s CPU    857.83s WALL (     495 calls)
+     init_us_2    :      0.10s CPU      0.14s WALL (     240 calls)
+     init_us_2:cp :      0.10s CPU      0.14s WALL (     240 calls)
+     cegterg      :    258.19s CPU    261.32s WALL (     495 calls)
 
      Called by *egterg:
-     cdiaghg      :    130.51s CPU    131.39s WALL (    8164 calls)
-     h_psi        :    470.95s CPU    477.76s WALL (    8659 calls)
-     g_psi        :      5.09s CPU      5.11s WALL (    7924 calls)
+     cdiaghg      :     72.96s CPU     73.46s WALL (    8124 calls)
+     h_psi        :    132.65s CPU    134.71s WALL (    8619 calls)
+     g_psi        :      0.88s CPU      0.89s WALL (    7884 calls)
 
      Called by h_psi:
-     h_psi:calbec :     52.02s CPU     52.66s WALL (    8659 calls)
-     vloc_psi     :    362.73s CPU    367.47s WALL (    8659 calls)
-     add_vuspsi   :     53.37s CPU     53.45s WALL (    8659 calls)
+     h_psi:calbec :     11.91s CPU     12.01s WALL (    8619 calls)
+     vloc_psi     :    108.33s CPU    109.96s WALL (    8619 calls)
+     add_vuspsi   :     11.47s CPU     11.51s WALL (    8619 calls)
 
      General routines
-     calbec       :     51.99s CPU     52.64s WALL (    8659 calls)
-     fft          :      0.01s CPU      0.03s WALL (      10 calls)
-     fftw         :    320.11s CPU    324.33s WALL (  859506 calls)
+     calbec       :     11.89s CPU     12.00s WALL (    8619 calls)
+     fft          :      0.01s CPU      0.02s WALL (      10 calls)
+     fftw         :    100.15s CPU    101.64s WALL (  859200 calls)
  
      Parallel routines
  
-     PWSCF        :  15m 3.77s CPU  15m23.45s WALL
+     PWSCF        :   4m40.15s CPU   4m57.03s WALL
 
  
-   This run was terminated on:  15:54:47   3Jan2024            
+   This run was terminated on:  15:36: 7   8Apr2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

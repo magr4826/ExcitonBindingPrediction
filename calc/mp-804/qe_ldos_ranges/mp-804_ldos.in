@@ -1,0 +1,13 @@
+&inputpp
+    prefix = 'mp-804'
+    outdir='out/',
+    plot_num=10,
+    emin = 12.662665771777093,
+    emax = 13.862665771777092,
+    delta_e = 0.1,
+/
+&plot
+    iflag=3,
+    output_format=6,
+    fileout='ldos.cube',
+/

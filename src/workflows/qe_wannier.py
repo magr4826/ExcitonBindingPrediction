@@ -293,9 +293,14 @@ for i in range(1, num_kpt):
     )
 VB_derv = np.array(VB_derv)
 VB_derv = abs(VB_derv)
+
 np.savetxt(
     f"{id}_mean_VB_derivatives.csv",
     [np.mean(VB_derv, axis=0)],
+)
+np.savetxt(
+    f"{id}_L2_VB_derivatives.csv",
+    [np.mean(np.sqrt(np.sum(VB_derv**2, 1)))],
 )
 
 # the output folder is huge, delete it if wanted

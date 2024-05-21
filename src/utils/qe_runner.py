@@ -236,13 +236,14 @@ def qe_emasses_run(calc_data, kpt0, ncores):
     return output
 
 
-def qe_ldos_run(calc_data, E1, E2):
+def qe_ldos_run(calc_data, E1, E2, radius=1):
     """
     Postprocesses a calculation to return the number of states around the ions in a structure
     INPUT:
         calc_data:      calc_data which stores the information about the structure
         E1:             Lower boundary for energy integration (in eV)
         E2:             Upper boundary for energy integration (in eV)
+        radius:         Radius of the sphere in which the number of states is summed up (in Angstrom)
     OUTPUT:
         ldos:           Array of local number of states
         structure:      structure read from the output cube file (This should be the same as in the calc_data)
@@ -253,7 +254,6 @@ def qe_ldos_run(calc_data, E1, E2):
 
     # parse ldos output
     ldos = []
-    radius = 1  # radius of the sphere in which the number of states is summed up
     ildos = VolumetricData.from_cube("ldos.cube")
     structure = ildos.structure
     a = ildos.dim
