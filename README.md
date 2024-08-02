@@ -10,12 +10,13 @@ in the *main.py* file to perform single calculations on the current interactive 
 **REQUIREMENTS:**
 
 - Python > v3.9 (miniconda with the following packages installed into base)
-    - pymatgen
-    - matplotlib
-    - numpy
-    - ase
-- QuantumEspresso > v7.1 ("/bin" directory loaded into the path, compiled for MPI)
-- Wannier90 > v3.1 ("/bin" and "/utility" directory loaded into the path, compiled for MPI)
+    - pymatgen == 2024.5.1
+    - matplotlib == 3.8.4
+    - numpy == 1.26.4
+    - ase == 3.22.1
+- QuantumEspresso == v7.1 ("/bin" directory loaded into the path, compiled for MPI)
+- Wannier90 == v3.1 ("/bin" and "/utility" directory loaded into the path, compiled for MPI)
+The version numbers correspond only to what has been verified to work, other versions might or might not work.
 
 **SETUP/USAGE**
 
