@@ -30,7 +30,10 @@ Otherwise, if the structures you are interested in are only available as .cif fi
 and run the *main_cif.py* script, indicating in it which cif-files you want to run, as well as settings and workflows, 
 same as for the *main.py* script.
 
+Before using *vasp_static_dielectric.py* change the part "/usr/app-soft1/vasp/potpaw_PBE.54/" in the path to the POTCAR files in line 47 of the script *src/utils/vasp_write.py* to the location of your POTCAR files.
+
 Possible workflows are found in /src/workflows.
+
 **ACKNOWLEDGEMENT**
 
 We want to thank Miguel A. L. Marques for the provision of the automated symmetry detection aiding the Quantum ESPRESSO workflows.
