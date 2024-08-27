@@ -1,5 +1,8 @@
 # Predicting exciton binding energies from ground state properties
 
+The code and data in this repository correspond to the research results published in the paper "[Predicting exciton binding energies from ground-state properties](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.110.075204)". 
+When using this repository, please cite the paper as: Grunert, M., Großmann, M. & Runge, E. Predicting exciton binding energies from ground-state properties. Phys. Rev. B 110, 075204 (2024). https://doi.org/10.1103/PhysRevB.110.075204
+
 This repository was created to analyze how the exciton binding energies of various bulk
 semiconducting and insulting materials are related to various ground state properties,
 such as the band gap, dielectric constant, ionizity and others. More information can
